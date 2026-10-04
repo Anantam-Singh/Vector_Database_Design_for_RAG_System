@@ -1,0 +1,20 @@
+qid,query_type,user_input,reference,llm_context_precision_with_reference,context_recall,mode,judge
+8264,numeric,how long do shingles spots last,3 to 5 weeks,0.8874999999778125,1.0,dense,openai/gpt-oss-20b
+4666,numeric,A fever is a rise in body temperature reading above,100.4°F or 38°C,0.8333333332916666,1.0,dense,openai/gpt-oss-20b
+9561,description,what is the mammalian version of a blastula,Blastocyst,0.49999999995,1.0,dense,openai/gpt-oss-20b
+1793,description,what does meristem culture,The culture of excised meristems on suitable nutrient media under aseptic conditions.,0.99999999998,1.0,dense,openai/gpt-oss-20b
+5305,description,what do the folds in the mitochondria membranes do,The folds in the inner membrane of the mitochondria are called cristae. They serve to provide a greater surface area for the proton-pump through which protons pass down their concentration gradient through ATP synthase to produce ATP in cellular respiration.,0.99999999998,1.0,dense,openai/gpt-oss-20b
+4633,description,what determines social security disability,Determine your onset date of disability because it may affect your benefit pay period or even your eligibility for Social Security Disability Insurance (SSDI) or Supplemental Security Income (SSI) benefits.,0.9999999999,1.0,dense,openai/gpt-oss-20b
+9410,description,what is muscle,"It is a soft tissue found in most animals. Muscle cells contain protein filaments of actin and myosin that slide past one another, producing a contraction that changes both the length and the shape of the cell.",0.999999999975,1.0,dense,openai/gpt-oss-20b
+7584,location,where are your ribs in your back located,Over your kidney.,0.0,0.0,dense,openai/gpt-oss-20b
+6794,numeric,how much cost skip hire,220,0.7499999999625,0.0,dense,openai/gpt-oss-20b
+9840,description,what is postscript,A computer language for creating vector graphics.,0.8041666666465626,0.0,dense,openai/gpt-oss-20b
+9701,description,what does uganda mean,Uganda does not have a real meaning. It was the Swahili word used to refer to the traditional kingdom of Buganda in Central Uganda.,0.9999999999,1.0,dense,openai/gpt-oss-20b
+2840,description,the medial concavity of the kidney is called the,The renal hilus,0.99999999998,1.0,dense,openai/gpt-oss-20b
+6692,description,what do people use compasses for,navigation location and direction,0.99999999998,1.0,dense,openai/gpt-oss-20b
+4569,description,is gelatin good for digestion,Yes,0.99999999998,1.0,dense,openai/gpt-oss-20b
+205,description,what is mf ceiling,MF is a suspended ceiling system suitable for most internal drylining applications.,0.99999999998,1.0,dense,openai/gpt-oss-20b
+5044,entity,"Plasmodium, the parasitic organism that causes malaria, is a",Yes,0.8666666666377778,0.0,dense,openai/gpt-oss-20b
+3472,numeric,how much does a surgeon make in canada,"$69,000 and $348,000",0.19999999998,1.0,dense,openai/gpt-oss-20b
+473,numeric,how much does it cost to rebook a skills test,$11,0.3333333333,1.0,dense,openai/gpt-oss-20b
+5873,description,is dunite extrusive or intrusive,Intrusive,0.99999999998,1.0,dense,openai/gpt-oss-20b

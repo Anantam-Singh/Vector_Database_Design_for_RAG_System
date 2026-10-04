@@ -1,0 +1,20 @@
+{
+  "timestamp": "2026-10-02T19:32:37+00:00",
+  "git_commit": "uncommitted",
+  "config_fingerprint": "56c12b01ad",
+  "profile": "gpu",
+  "device": "cuda",
+  "hardware": {
+    "platform": "Windows-10-10.0.26300-SP0",
+    "python": "3.11.16",
+    "cpu_threads": 20,
+    "ram_gb": 15.7,
+    "torch_threads": 14,
+    "gpu": "NVIDIA GeForce RTX 3050 6GB Laptop GPU"
+  },
+  "split": "test",
+  "mode": "hybrid_rerank",
+  "search": {},
+  "index_points": 500000,
+  "filter_mode": "none"
+}

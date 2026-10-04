@@ -1,0 +1,111 @@
+{
+  "meta": {
+    "timestamp": "2026-10-02T19:33:49+00:00",
+    "git_commit": "uncommitted",
+    "config_fingerprint": "56c12b01ad",
+    "profile": "gpu",
+    "device": "cuda",
+    "hardware": {
+      "platform": "Windows-10-10.0.26300-SP0",
+      "python": "3.11.16",
+      "cpu_threads": 20,
+      "ram_gb": 15.7,
+      "torch_threads": 14,
+      "gpu": "NVIDIA GeForce RTX 3050 6GB Laptop GPU"
+    },
+    "collection": "msmarco_500k"
+  },
+  "data": {
+    "bootstrap": {
+      "hybrid_vs_dense": {
+        "mrr@10": {
+          "mean_diff": 0.0018,
+          "ci95_low": -0.0073,
+          "ci95_high": 0.0107,
+          "wins": 139,
+          "ties": 771,
+          "losses": 90
+        },
+        "recall@5": {
+          "mean_diff": 0.0056,
+          "ci95_low": -0.0077,
+          "ci95_high": 0.0179,
+          "wins": 29,
+          "ties": 948,
+          "losses": 23
+        }
+      },
+      "hybrid_rerank_vs_dense": {
+        "mrr@10": {
+          "mean_diff": 0.0622,
+          "ci95_low": 0.0424,
+          "ci95_high": 0.083,
+          "wins": 351,
+          "ties": 450,
+          "losses": 199
+        },
+        "recall@5": {
+          "mean_diff": 0.0684,
+          "ci95_low": 0.0432,
+          "ci95_high": 0.0936,
+          "wins": 129,
+          "ties": 813,
+          "losses": 58
+        }
+      },
+      "dense_rerank_vs_dense": {
+        "mrr@10": {
+          "mean_diff": 0.0626,
+          "ci95_low": 0.0431,
+          "ci95_high": 0.0826,
+          "wins": 348,
+          "ties": 472,
+          "losses": 180
+        },
+        "recall@5": {
+          "mean_diff": 0.0714,
+          "ci95_low": 0.047,
+          "ci95_high": 0.0965,
+          "wins": 126,
+          "ties": 824,
+          "losses": 50
+        }
+      },
+      "hybrid_rerank_vs_dense_rerank": {
+        "mrr@10": {
+          "mean_diff": -0.0003,
+          "ci95_low": -0.0078,
+          "ci95_high": 0.0072,
+          "wins": 64,
+          "ties": 879,
+          "losses": 57
+        },
+        "recall@5": {
+          "mean_diff": -0.003,
+          "ci95_low": -0.016,
+          "ci95_high": 0.0105,
+          "wins": 24,
+          "ties": 945,
+          "losses": 31
+        }
+      }
+    },
+    "candidate_recall": {
+      "10": {
+        "dense": 0.824,
+        "bm25": 0.647,
+        "union": 0.865
+      },
+      "20": {
+        "dense": 0.899,
+        "bm25": 0.756,
+        "union": 0.931
+      },
+      "50": {
+        "dense": 0.952,
+        "bm25": 0.838,
+        "union": 0.974
+      }
+    }
+  }
+}

@@ -1,0 +1,50 @@
+{
+  "meta": {
+    "timestamp": "2026-10-03T23:14:17+00:00",
+    "git_commit": "uncommitted",
+    "config_fingerprint": "77cd0298c3",
+    "profile": "gpu",
+    "device": "cuda",
+    "hardware": {
+      "platform": "Windows-10-10.0.26300-SP0",
+      "python": "3.11.16",
+      "cpu_threads": 20,
+      "ram_gb": 15.7,
+      "torch_threads": 14,
+      "gpu": "NVIDIA GeForce RTX 3050 6GB Laptop GPU"
+    },
+    "judge": "openai/gpt-oss-120b",
+    "groq_quota": {
+      "openai/gpt-oss-120b": {
+        "remaining_requests": 910,
+        "limit_requests": 1000,
+        "remaining_tokens": "75",
+        "reset_requests": "2h9m36s"
+      }
+    },
+    "index_points": 500000
+  },
+  "data": {
+    "dense": {
+      "n_questions": 50,
+      "context_precision": 0.754194,
+      "context_recall": 0.85,
+      "judge": "openai/gpt-oss-120b",
+      "nan_scores": 0
+    },
+    "hybrid": {
+      "n_questions": 50,
+      "context_precision": 0.769528,
+      "context_recall": 0.87,
+      "judge": "openai/gpt-oss-120b",
+      "nan_scores": 0
+    },
+    "hybrid_rerank": {
+      "n_questions": 50,
+      "context_precision": 0.820444,
+      "context_recall": 0.856667,
+      "judge": "openai/gpt-oss-120b",
+      "nan_scores": 0
+    }
+  }
+}

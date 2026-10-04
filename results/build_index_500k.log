@@ -1,0 +1,20 @@
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+corpus: 500,000 unique passages (80,797 validation) in 37s | profile=gpu device=cuda
+Loading weights:   0%|          | 0/199 [00:00<?, ?it/s]Loading weights:  51%|#####     | 101/199 [00:00<00:00, 1005.87it/s]Loading weights: 100%|##########| 199/199 [00:00<00:00, 1527.03it/s]
+  32,768/500,000  dense 0.5 min | bm25 0.1 min | upload 0.2 min
+  65,536/500,000  dense 1.1 min | bm25 0.2 min | upload 0.5 min
+  98,304/500,000  dense 1.6 min | bm25 0.3 min | upload 0.7 min
+  131,072/500,000  dense 2.1 min | bm25 0.4 min | upload 1.0 min
+  163,840/500,000  dense 2.7 min | bm25 0.5 min | upload 1.2 min
+  196,608/500,000  dense 3.2 min | bm25 0.6 min | upload 1.4 min
+  229,376/500,000  dense 3.7 min | bm25 0.7 min | upload 1.6 min
+  262,144/500,000  dense 4.2 min | bm25 0.8 min | upload 1.8 min
+  294,912/500,000  dense 4.7 min | bm25 0.8 min | upload 2.0 min
+  327,680/500,000  dense 5.2 min | bm25 0.9 min | upload 2.2 min
+  360,448/500,000  dense 5.7 min | bm25 0.9 min | upload 2.3 min
+  393,216/500,000  dense 6.2 min | bm25 1.0 min | upload 2.5 min
+  425,984/500,000  dense 6.9 min | bm25 1.1 min | upload 2.8 min
+  458,752/500,000  dense 7.4 min | bm25 1.1 min | upload 2.9 min
+  491,520/500,000  dense 7.9 min | bm25 1.2 min | upload 3.1 min
+  500,000/500,000  dense 8.0 min | bm25 1.2 min | upload 3.1 min
+DONE: 500,000 points in 13.3 min (limit 120) -> PASS | saved index_build_500000.json

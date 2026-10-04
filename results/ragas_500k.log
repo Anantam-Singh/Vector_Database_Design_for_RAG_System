@@ -1,0 +1,13 @@
+Groq keys in use: #2, #3, #4
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+Loading weights:   0%|          | 0/199 [00:00<?, ?it/s]Loading weights:  21%|##1       | 42/199 [00:00<00:00, 394.67it/s]Loading weights:  45%|####4     | 89/199 [00:00<00:00, 427.15it/s]Loading weights:  66%|######6   | 132/199 [00:00<00:00, 418.82it/s]Loading weights:  87%|########7 | 174/199 [00:00<00:00, 418.62it/s]Loading weights: 100%|##########| 199/199 [00:00<00:00, 472.32it/s]
+Loading weights:   0%|          | 0/105 [00:00<?, ?it/s]Loading weights:  59%|#####9    | 62/105 [00:00<00:00, 601.67it/s]Loading weights: 100%|##########| 105/105 [00:00<00:00, 774.79it/s]
+[dense] judge=openai/gpt-oss-120b | 5 done, 45 to go
+  +5 scored, 0 failed (left for later) in 184s | key #2 | Groq requests left today: 970/1000
+  +5 scored, 0 failed (left for later) in 157s | key #2 | Groq requests left today: 940/1000
+  +5 scored, 0 failed (left for later) in 133s | key #2 | Groq requests left today: 910/1000
+  +5 scored, 0 failed (left for later) in 145s | key #2 | Groq requests left today: 880/1000
+  +5 scored, 0 failed (left for later) in 111s | key #2 | Groq requests left today: 850/1000
+  +5 scored, 0 failed (left for later) in 108s | key #2 | Groq requests left today: 820/1000
+Exception raised in Job[3]: RateLimitError(Error code: 429 - {'error': {'message': 'Rate limit reached for model `openai/gpt-oss-120b` in organization `org_01m3yv7n5beed9m54qwk5vpwdm` service tier `on_demand` on tokens per day (TPD): Limit 200000, Used 199085, Requested 1579. Please try again in 4m46.848s. Need more tokens? Upgrade to Dev Tier today at https://console.groq.com/settings/billing', 'type': 'tokens', 'code': 'rate_limit_exceeded'}})
+Exception raised in Job[4]: RateLimitError(Error code: 429 - {'error': {'message': 'Rate limit reached for model `openai/gpt-oss-120b` in organization `org_01m3yv7n5beed9m54qwk5vpwdm` service tier `on_demand` on tokens per day (TPD): Limit 200000, Used 198783, Requested 1614. Please try again in 2m51.504s. Need more tokens? Upgrade to Dev Tier today at https://console.groq.com/settings/billing', 'type': 'tokens', 'code': 'rate_limit_exceeded'}})

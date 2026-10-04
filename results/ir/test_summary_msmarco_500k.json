@@ -1,0 +1,68 @@
+{
+  "meta": {
+    "timestamp": "2026-10-02T19:32:37+00:00",
+    "git_commit": "uncommitted",
+    "config_fingerprint": "56c12b01ad",
+    "profile": "gpu",
+    "device": "cuda",
+    "hardware": {
+      "platform": "Windows-10-10.0.26300-SP0",
+      "python": "3.11.16",
+      "cpu_threads": 20,
+      "ram_gb": 15.7,
+      "torch_threads": 14,
+      "gpu": "NVIDIA GeForce RTX 3050 6GB Laptop GPU"
+    },
+    "split": "test",
+    "search": {},
+    "index_points": 500000,
+    "filter_mode": "none"
+  },
+  "data": {
+    "dense": {
+      "mrr@10": 0.4505,
+      "ndcg@10": 0.5339,
+      "hit@5": 0.689,
+      "recall@5": 0.6711,
+      "precision@5": 0.1446,
+      "hit@10": 0.824,
+      "n_queries": 1000
+    },
+    "bm25": {
+      "mrr@10": 0.3155,
+      "ndcg@10": 0.3849,
+      "hit@5": 0.5,
+      "recall@5": 0.4783,
+      "precision@5": 0.1038,
+      "hit@10": 0.647,
+      "n_queries": 1000
+    },
+    "hybrid": {
+      "mrr@10": 0.4523,
+      "ndcg@10": 0.5362,
+      "hit@5": 0.695,
+      "recall@5": 0.6767,
+      "precision@5": 0.1458,
+      "hit@10": 0.83,
+      "n_queries": 1000
+    },
+    "dense_rerank": {
+      "mrr@10": 0.513,
+      "ndcg@10": 0.592,
+      "hit@5": 0.761,
+      "recall@5": 0.7425,
+      "precision@5": 0.161,
+      "hit@10": 0.859,
+      "n_queries": 1000
+    },
+    "hybrid_rerank": {
+      "mrr@10": 0.5127,
+      "ndcg@10": 0.5881,
+      "hit@5": 0.757,
+      "recall@5": 0.7395,
+      "precision@5": 0.1598,
+      "hit@10": 0.851,
+      "n_queries": 1000
+    }
+  }
+}

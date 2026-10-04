@@ -1,0 +1,114 @@
+{
+  "meta": {
+    "timestamp": "2026-10-02T20:42:14+00:00",
+    "git_commit": "uncommitted",
+    "config_fingerprint": "56c12b01ad",
+    "profile": "gpu",
+    "device": "cuda",
+    "hardware": {
+      "platform": "Windows-10-10.0.26300-SP0",
+      "python": "3.11.16",
+      "cpu_threads": 20,
+      "ram_gb": 15.7,
+      "torch_threads": 14,
+      "gpu": "NVIDIA GeForce RTX 3050 6GB Laptop GPU"
+    },
+    "index_points": 100000,
+    "api": "http://127.0.0.1:8765",
+    "cache": "off"
+  },
+  "data": {
+    "dense": {
+      "n": 100,
+      "p50_ms": 33.3,
+      "p95_ms": 41.6,
+      "p99_ms": 42.8,
+      "max_ms": 44.4,
+      "mean_ms": 31.9,
+      "pass_p95_lt_300": true,
+      "warmup_ms": [
+        82.3,
+        40.2,
+        22.0,
+        43.5,
+        38.2
+      ],
+      "median_stage_ms": {
+        "embed_dense": 13.64,
+        "qdrant": 17.97,
+        "total": 31.72
+      }
+    },
+    "hybrid": {
+      "n": 100,
+      "p50_ms": 33.4,
+      "p95_ms": 47.0,
+      "p99_ms": 49.5,
+      "max_ms": 49.9,
+      "mean_ms": 33.3,
+      "pass_p95_lt_300": true,
+      "warmup_ms": [
+        48.1,
+        44.2,
+        39.5,
+        42.6,
+        39.0
+      ],
+      "median_stage_ms": {
+        "embed_dense": 13.96,
+        "embed_bm25": 0.06,
+        "qdrant": 17.39,
+        "fusion": 0.05,
+        "total": 31.68
+      }
+    },
+    "hybrid_rerank": {
+      "n": 100,
+      "p50_ms": 58.6,
+      "p95_ms": 76.2,
+      "p99_ms": 80.6,
+      "max_ms": 87.5,
+      "mean_ms": 59.4,
+      "pass_p95_lt_300": true,
+      "warmup_ms": [
+        328.5,
+        43.0,
+        64.6,
+        61.5,
+        50.9
+      ],
+      "median_stage_ms": {
+        "embed_dense": 9.03,
+        "embed_bm25": 0.05,
+        "qdrant": 18.03,
+        "fusion": 0.05,
+        "rerank": 30.05,
+        "total": 56.56
+      }
+    },
+    "hybrid_rerank+filter": {
+      "n": 100,
+      "p50_ms": 60.9,
+      "p95_ms": 86.8,
+      "p99_ms": 96.1,
+      "max_ms": 101.3,
+      "mean_ms": 62.7,
+      "pass_p95_lt_300": true,
+      "warmup_ms": [
+        56.2,
+        46.2,
+        66.9,
+        55.2,
+        63.6
+      ],
+      "median_stage_ms": {
+        "embed_dense": 9.91,
+        "embed_bm25": 0.06,
+        "qdrant": 15.73,
+        "fusion": 0.06,
+        "rerank": 31.01,
+        "total": 58.86
+      }
+    }
+  }
+}

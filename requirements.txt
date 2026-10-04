@@ -1,0 +1,26 @@
+# Direct dependencies (exact tested versions are in requirements.lock.txt)
+# GPU build of PyTorch comes from the PyTorch index:
+#   uv pip install -r requirements.txt --extra-index-url https://download.pytorch.org/whl/cu128 --index-strategy unsafe-best-match
+torch==2.11.0
+sentence-transformers==6.1.0
+qdrant-client==1.19.1
+fastembed==0.8.1
+datasets==5.0.1
+ragas==0.4.3
+langchain<1
+langchain-core<1
+langchain-community<0.4
+langchain-openai<1
+langchain-groq<1
+groq==0.37.1
+fastapi==0.142.2
+uvicorn[standard]==0.54.0
+pandas==3.0.6
+numpy==2.4.6
+matplotlib==3.11.2
+pyyaml
+python-dotenv
+tqdm
+httpx
+pytest
+psutil

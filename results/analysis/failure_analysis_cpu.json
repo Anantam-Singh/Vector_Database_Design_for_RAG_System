@@ -1,0 +1,443 @@
+{
+  "meta": {
+    "timestamp": "2026-10-04T00:11:17+00:00",
+    "git_commit": "uncommitted",
+    "config_fingerprint": "77cd0298c3",
+    "profile": "gpu",
+    "device": "cuda",
+    "hardware": {
+      "platform": "Windows-10-10.0.26300-SP0",
+      "python": "3.11.16",
+      "cpu_threads": 20,
+      "ram_gb": 15.7,
+      "torch_threads": 14,
+      "gpu": "NVIDIA GeForce RTX 3050 6GB Laptop GPU"
+    }
+  },
+  "data": {
+    "n_questions": 1000,
+    "case_counts": {
+      "dense_misses_top10": 73,
+      "dense_fails_hybrid_fixes(top5)": 16,
+      "dense_ok_hybrid_breaks(top5)": 11,
+      "bm25_finds_dense_misses(top10)": 27,
+      "rerank_fixes_order(to #1)": 137,
+      "rerank_hurts(#1 lost)": 79,
+      "all_methods_fail(top10)": 39
+    },
+    "breakdowns": {
+      "query_type": {
+        "description": {
+          "n": 520,
+          "dense_mrr": 0.5308,
+          "bm25_mrr": 0.4011,
+          "hybrid_mrr": 0.531,
+          "dense_rerank_mrr": 0.5838,
+          "hybrid_rerank_mrr": 0.5827,
+          "hybrid_vs_dense": {
+            "mean_diff": 0.0002,
+            "ci95_low": -0.0098,
+            "ci95_high": 0.0102,
+            "wins": 43,
+            "ties": 449,
+            "losses": 28
+          },
+          "rerank_bm25_value": {
+            "mean_diff": -0.0011,
+            "ci95_low": -0.0131,
+            "ci95_high": 0.0114,
+            "wins": 31,
+            "ties": 460,
+            "losses": 29
+          }
+        },
+        "entity": {
+          "n": 110,
+          "dense_mrr": 0.521,
+          "bm25_mrr": 0.4302,
+          "hybrid_mrr": 0.5274,
+          "dense_rerank_mrr": 0.5613,
+          "hybrid_rerank_mrr": 0.5599,
+          "hybrid_vs_dense": {
+            "mean_diff": 0.0064,
+            "ci95_low": -0.0045,
+            "ci95_high": 0.0195,
+            "wins": 12,
+            "ties": 91,
+            "losses": 7
+          },
+          "rerank_bm25_value": {
+            "mean_diff": -0.0014,
+            "ci95_low": -0.0242,
+            "ci95_high": 0.0177,
+            "wins": 9,
+            "ties": 95,
+            "losses": 6
+          }
+        },
+        "location": {
+          "n": 47,
+          "dense_mrr": 0.5807,
+          "bm25_mrr": 0.4545,
+          "hybrid_mrr": 0.6059,
+          "dense_rerank_mrr": 0.6599,
+          "hybrid_rerank_mrr": 0.6688,
+          "hybrid_vs_dense": {
+            "mean_diff": 0.0252,
+            "ci95_low": 0.0024,
+            "ci95_high": 0.0605,
+            "wins": 5,
+            "ties": 42,
+            "losses": 0
+          },
+          "rerank_bm25_value": {
+            "mean_diff": 0.0089,
+            "ci95_low": 0.0,
+            "ci95_high": 0.0195,
+            "wins": 3,
+            "ties": 44,
+            "losses": 0
+          }
+        },
+        "numeric": {
+          "n": 293,
+          "dense_mrr": 0.5344,
+          "bm25_mrr": 0.3546,
+          "hybrid_mrr": 0.5347,
+          "dense_rerank_mrr": 0.5854,
+          "hybrid_rerank_mrr": 0.5682,
+          "hybrid_vs_dense": {
+            "mean_diff": 0.0003,
+            "ci95_low": -0.0134,
+            "ci95_high": 0.015,
+            "wins": 34,
+            "ties": 230,
+            "losses": 29
+          },
+          "rerank_bm25_value": {
+            "mean_diff": -0.0172,
+            "ci95_low": -0.0377,
+            "ci95_high": 0.0022,
+            "wins": 20,
+            "ties": 246,
+            "losses": 27
+          }
+        },
+        "person": {
+          "n": 30,
+          "dense_mrr": 0.5181,
+          "bm25_mrr": 0.4285,
+          "hybrid_mrr": 0.522,
+          "dense_rerank_mrr": 0.6111,
+          "hybrid_rerank_mrr": 0.6,
+          "hybrid_vs_dense": {
+            "mean_diff": 0.0039,
+            "ci95_low": -0.0061,
+            "ci95_high": 0.0178,
+            "wins": 2,
+            "ties": 27,
+            "losses": 1
+          },
+          "rerank_bm25_value": {
+            "mean_diff": -0.0111,
+            "ci95_low": -0.0333,
+            "ci95_high": 0.0,
+            "wins": 0,
+            "ties": 29,
+            "losses": 1
+          }
+        }
+      },
+      "has_number": {
+        "False": {
+          "n": 1000,
+          "dense_mrr": 0.5327,
+          "bm25_mrr": 0.394,
+          "hybrid_mrr": 0.535,
+          "dense_rerank_mrr": 0.5862,
+          "hybrid_rerank_mrr": 0.5805,
+          "hybrid_vs_dense": {
+            "mean_diff": 0.0022,
+            "ci95_low": -0.0043,
+            "ci95_high": 0.0088,
+            "wins": 96,
+            "ties": 839,
+            "losses": 65
+          },
+          "rerank_bm25_value": {
+            "mean_diff": -0.0057,
+            "ci95_low": -0.0147,
+            "ci95_high": 0.0032,
+            "wins": 63,
+            "ties": 874,
+            "losses": 63
+          }
+        }
+      },
+      "length": {
+        "short (\u22644 words)": {
+          "n": 274,
+          "dense_mrr": 0.5717,
+          "bm25_mrr": 0.3939,
+          "hybrid_mrr": 0.5684,
+          "dense_rerank_mrr": 0.6179,
+          "hybrid_rerank_mrr": 0.6191,
+          "hybrid_vs_dense": {
+            "mean_diff": -0.0033,
+            "ci95_low": -0.0181,
+            "ci95_high": 0.0101,
+            "wins": 23,
+            "ties": 237,
+            "losses": 14
+          },
+          "rerank_bm25_value": {
+            "mean_diff": 0.0012,
+            "ci95_low": -0.0151,
+            "ci95_high": 0.0166,
+            "wins": 18,
+            "ties": 243,
+            "losses": 13
+          }
+        },
+        "medium (5\u20138)": {
+          "n": 585,
+          "dense_mrr": 0.5323,
+          "bm25_mrr": 0.4128,
+          "hybrid_mrr": 0.5386,
+          "dense_rerank_mrr": 0.5965,
+          "hybrid_rerank_mrr": 0.5908,
+          "hybrid_vs_dense": {
+            "mean_diff": 0.0063,
+            "ci95_low": -0.0014,
+            "ci95_high": 0.0151,
+            "wins": 55,
+            "ties": 491,
+            "losses": 39
+          },
+          "rerank_bm25_value": {
+            "mean_diff": -0.0057,
+            "ci95_low": -0.0171,
+            "ci95_high": 0.0065,
+            "wins": 31,
+            "ties": 518,
+            "losses": 36
+          }
+        },
+        "long (9+)": {
+          "n": 141,
+          "dense_mrr": 0.4589,
+          "bm25_mrr": 0.3161,
+          "hybrid_mrr": 0.4548,
+          "dense_rerank_mrr": 0.4817,
+          "hybrid_rerank_mrr": 0.4629,
+          "hybrid_vs_dense": {
+            "mean_diff": -0.0041,
+            "ci95_low": -0.0233,
+            "ci95_high": 0.0125,
+            "wins": 18,
+            "ties": 111,
+            "losses": 12
+          },
+          "rerank_bm25_value": {
+            "mean_diff": -0.0188,
+            "ci95_low": -0.0467,
+            "ci95_high": 0.0046,
+            "wins": 14,
+            "ties": 113,
+            "losses": 14
+          }
+        }
+      }
+    },
+    "examples": {
+      "dense_fails_hybrid_fixes(top5)": [
+        {
+          "qid": 5265,
+          "query": "average college tuition for private college",
+          "query_type": "numeric",
+          "ranks": {
+            "dense": 6,
+            "bm25": 4,
+            "hybrid": 5,
+            "dense_rerank": 5,
+            "hybrid_rerank": 5
+          },
+          "dense_top1": "[Check out this video on how to tell whether you can afford a college. ]. On average, tuition and fees for private universities cost $32,599 in the 2015-2016 school year, according to data reported to U.S. News by 711 ranked private schools. That's a 3.9 percent increase from last year's average",
+          "hybrid_rerank_top1": "[Check out this video on how to tell whether you can afford a college. ]. On average, tuition and fees for private universities cost $32,599 in the 2015-2016 school year, according to data reported to U.S. News by 711 ranked private schools. That's a 3.9 percent increase from last year's average",
+          "labelled_correct": "Colleges often report a combined tuition and fees figure. According to the College Board, the average cost of tuition and fees for the 2014\u20132015 school year was $31,231 at private colleges, $9,139 for state residents at public colleges, and $22,958 for out-of-state residents attending public univers"
+        },
+        {
+          "qid": 9956,
+          "query": "is yogurt considered a dairy in diet",
+          "query_type": "description",
+          "ranks": {
+            "dense": 6,
+            "bm25": 3,
+            "hybrid": 3,
+            "dense_rerank": 2,
+            "hybrid_rerank": 2
+          },
+          "dense_top1": "Yogurt does a body good, dairy or not. When living a dairy-free lifestyle, it's not unusual to crave certain comfort foods from your dairy days. However, most of these milk-based cravings are easily avoided when striving for a healthy diet.",
+          "hybrid_rerank_top1": "Yogurt does a body good, dairy or not. When living a dairy-free lifestyle, it's not unusual to crave certain comfort foods from your dairy days. However, most of these milk-based cravings are easily avoided when striving for a healthy diet.",
+          "labelled_correct": "Dairy. All foods derived from or containing milk are considered dairy, or milchig (Yiddish). This includes milk, butter, yogurt and all cheese -- hard, soft and cream. Even a small amount of dairy in a food can cause the food to be considered dairy. All dairy products require kosher certification."
+        },
+        {
+          "qid": 1563,
+          "query": "average temperature in side turkey in may",
+          "query_type": "numeric",
+          "ranks": {
+            "dense": 10,
+            "bm25": null,
+            "hybrid": 5,
+            "dense_rerank": 8,
+            "hybrid_rerank": 6
+          },
+          "dense_top1": "Check the Weather in Turkey in May before you book your next holiday. This gives the best indication of the weather in May and includes figures for temperature, sunshine and rainfall. The Turkey may weather guide shown below is for Istanbul. 1 21\u00b0C max day temperature.",
+          "hybrid_rerank_top1": "Spring time in Side is officially here in the month of May! Experience a warmer month as this small town draws closer to summer. The average temperature for May is now 20\u00b0C, which is about four degrees warmer than the previous month. The coldest temperature in May is 15\u00b0C, which happens to also be t",
+          "labelled_correct": "The climate of the Anatolian Plateau (Central Anatolian region) is a steppe climate (there is a great temperature difference between day and night). Rainfall is low and there is more snow. The average temperature is 23 deg.C in summer and -2 deg.C in winter. The climate in the Black Sea area (Black "
+        }
+      ],
+      "rerank_fixes_order(to #1)": [
+        {
+          "qid": 9561,
+          "query": "what is the mammalian version of a blastula",
+          "query_type": "description",
+          "ranks": {
+            "dense": 2,
+            "bm25": 5,
+            "hybrid": 2,
+            "dense_rerank": 1,
+            "hybrid_rerank": 1
+          },
+          "dense_top1": "Jump to: navigation, search ... The blastula is an early stage of embryo nic development in animals. It is produced by cleavage of a fertilized ovum and consisting of a spherical layer of cells surrounding a fluid-filled cavity.",
+          "hybrid_rerank_top1": "A common feature of a vertebrate blastula is that it consists of a layer of blastomeres, known as the blastoderm, which surrounds the blastocoele. In mammals the blastula is referred to as a blastocyst. The blastocyst contains an embryoblast (or inner cell mass) that will eventually give rise to the",
+          "labelled_correct": "A common feature of a vertebrate blastula is that it consists of a layer of blastomeres, known as the blastoderm, which surrounds the blastocoele. In mammals the blastula is referred to as a blastocyst. The blastocyst contains an embryoblast (or inner cell mass) that will eventually give rise to the"
+        },
+        {
+          "qid": 5305,
+          "query": "what do the folds in the mitochondria membranes do",
+          "query_type": "description",
+          "ranks": {
+            "dense": 2,
+            "bm25": 10,
+            "hybrid": 2,
+            "dense_rerank": 1,
+            "hybrid_rerank": 1
+          },
+          "dense_top1": "Answer by Propsie. Confidence votes 661. The mitochondria itself is not highly folded. The inner membrane of the mitochondria is, and this increases the surface area of the membrane while not changing the volume enclosed by it. The inner membrane contains ATP synthase, which is an enzyme that stimul",
+          "hybrid_rerank_top1": "The folds in the inner membrane of the mitochondria are called cristae. They serve to provide a greater surface area for the proton-pump through which protons pass down their \u2026 concentration gradient through ATP synthase to produce ATP in cellular respiration. 1 person found this useful.",
+          "labelled_correct": "The folds in the inner membrane of the mitochondria are called cristae. They serve to provide a greater surface area for the proton-pump through which protons pass down their \u2026 concentration gradient through ATP synthase to produce ATP in cellular respiration. 1 person found this useful."
+        },
+        {
+          "qid": 9840,
+          "query": "what is postscript",
+          "query_type": "description",
+          "ranks": {
+            "dense": 9,
+            "bm25": 8,
+            "hybrid": 9,
+            "dense_rerank": 1,
+            "hybrid_rerank": 1
+          },
+          "dense_top1": "PostScript is a programming language optimized for printing graphics and text (whether on paper, film, or. is immaterial). In the jargon of the day, it is a page description language. It was introduced by Adobe in 1985 and first (to my knowledge) appeared in the Apple LaserWriter. The main purpose o",
+          "hybrid_rerank_top1": "PostScript (PS) is a computer language for creating vector graphics. It is a dynamically typed, concatenative programming language and was created by John Warnock, Charles Geschke, Doug Brotz, Ed Taft and Bill Paxton in 1982. It is used as a page description language in the electronic and desktop pu",
+          "labelled_correct": "PostScript (PS) is a computer language for creating vector graphics. It is a dynamically typed, concatenative programming language and was created by John Warnock, Charles Geschke, Doug Brotz, Ed Taft and Bill Paxton in 1982. It is used as a page description language in the electronic and desktop pu"
+        }
+      ],
+      "rerank_hurts(#1 lost)": [
+        {
+          "qid": 4633,
+          "query": "what determines social security disability",
+          "query_type": "description",
+          "ranks": {
+            "dense": 1,
+            "bm25": 3,
+            "hybrid": 1,
+            "dense_rerank": 3,
+            "hybrid_rerank": 3
+          },
+          "dense_top1": "It is important for the Social Security Administration (SSA) to determine your onset date of disability because it may affect your benefit pay period or even your eligibility for Social Security Disability Insurance (SSDI) or Supplemental Security Income (SSI) benefits.",
+          "hybrid_rerank_top1": "How Disability is Determined. To determine whether someone is disabled under their laws, the Social Security Administration uses a five-step evaluation process.",
+          "labelled_correct": "It is important for the Social Security Administration (SSA) to determine your onset date of disability because it may affect your benefit pay period or even your eligibility for Social Security Disability Insurance (SSDI) or Supplemental Security Income (SSI) benefits."
+        },
+        {
+          "qid": 7859,
+          "query": "building a garage cost",
+          "query_type": "numeric",
+          "ranks": {
+            "dense": 1,
+            "bm25": 4,
+            "hybrid": 1,
+            "dense_rerank": 2,
+            "hybrid_rerank": 2
+          },
+          "dense_top1": "Find out how much your project will cost. Provide a few details about your project and receive competitive quotes from local pros. The average national cost to build a garage is $23,573, with most homeowners spending between $14,621 and $32,525. When it comes to building a garage, a lot of factors c",
+          "hybrid_rerank_top1": "1 Building a garage typically costs about $35-$45 a square foot, or $8,400-$10,800 for a standard single-car garage and $13,300-$17,100 for a two-car garage. 2 A custom outdoor greenhouse with a solid foundation, heating and electricity starts at $10,000-$20,000 for a small structure, but can cost $",
+          "labelled_correct": "Find out how much your project will cost. Provide a few details about your project and receive competitive quotes from local pros. The average national cost to build a garage is $23,573, with most homeowners spending between $14,621 and $32,525. When it comes to building a garage, a lot of factors c"
+        },
+        {
+          "qid": 1039,
+          "query": "who named the cell phone",
+          "query_type": "person",
+          "ranks": {
+            "dense": 1,
+            "bm25": 7,
+            "hybrid": 1,
+            "dense_rerank": 2,
+            "hybrid_rerank": 2
+          },
+          "dense_top1": "Well, the inventor of the cell phone is named Martin Cooper and he is the man responsible for the generation and development of the very first cell phone. Although, it was a research team associated with AT&T that first introduced the whole idea of cellular communications in 1947. Search No More for",
+          "hybrid_rerank_top1": "Well, the inventor of the cell phone is named Martin Cooper and he is the man responsible for the generation and development of the very first cell phone. Although, it was a research team associated with AT&T that first introduced the whole idea of cellular communications in 1947. It was April 3, 19",
+          "labelled_correct": "Well, the inventor of the cell phone is named Martin Cooper and he is the man responsible for the generation and development of the very first cell phone. Although, it was a research team associated with AT&T that first introduced the whole idea of cellular communications in 1947. Search No More for"
+        }
+      ],
+      "all_methods_fail(top10)": [
+        {
+          "qid": 3632,
+          "query": "what income can contribute to an ira",
+          "query_type": "numeric",
+          "ranks": {
+            "dense": null,
+            "bm25": null,
+            "hybrid": null,
+            "dense_rerank": null,
+            "hybrid_rerank": null
+          },
+          "dense_top1": "Generally, you can contribute up to $5,000 to an IRA in 2011 ($6,000 if you'll be age 50 or older by the end of the year), as long as you have taxable compensation at least equal to the amount of your IRA contribution.",
+          "hybrid_rerank_top1": "For 2015, you can contribute the maximum $5,500 to a Roth IRA ($6,500 if you are age 50 or older by the end of the year) if you are single or the single head of a household and your modified adjusted gross income (MAGI) is less than $164,000. You may make a partial contribution to a Roth IRA if you ",
+          "labelled_correct": "For details, see more on Roth IRA conversions). For 2015, you can contribute the maximum $5,500 to a Roth IRA ($6,500 if you are age 50 or older by the end of the year) if you are single or the single head of a household and your modified adjusted gross income (MAGI) is less than $164,000. One cavea"
+        },
+        {
+          "qid": 8941,
+          "query": "what the average cost of getting a cement foundation",
+          "query_type": "numeric",
+          "ranks": {
+            "dense": null,
+            "bm25": null,
+            "hybrid": null,
+            "dense_rerank": null,
+            "hybrid_rerank": null
+          },
+          "dense_top1": "Below are some concrete prices to help you determine your new concrete foundation cost. 1 Concrete is typically measured by cubic yards (3\u2019x3\u2019x3\u2019). 2 An average cost for a cubic yard of concrete is $75 to $125, depending on how much is needed and local prices. The cost of a new cement foundation is ",
+          "hybrid_rerank_top1": "Below are some concrete prices to help you determine your new concrete foundation cost. 1 Concrete is typically measured by cubic yards (3\u2019x3\u2019x3\u2019). 2 An average cost for a cubic yard of concrete is $75 to $125, depending on how much is needed and local prices. The cost of a new cement foundation is ",
+          "labelled_correct": "NEXT STEP. Find out how much your project will cost. Provide a few details about your project and receive competitive quotes from local pros. The average national cost of building a foundation is $7,775, with most homeowners spending between $4,239 and $11,710. This data is based on actual project c"
+        },
+        {
+          "qid": 424,
+          "query": "sign and symptoms of pneumonia caused by bacillus subtilis",
+          "query_type": "entity",
+          "ranks": {
+            "dense": null,
+            "bm25": null,
+            "hybrid": null,
+            "dense_rerank": null,
+            "hybrid_rerank": null
+          },
+          "dense_top1": "Bacterial pneumonia. Symptoms of pneumonia caused by bacteria in otherwise healthy people younger than 65 usually come on suddenly. They often start during or after an upper respiratory infection, such as the flu or a cold. Symptoms may include: 1 Cough, often producing mucus, also called sputum, fr",
+          "hybrid_rerank_top1": "Bacterial pneumonia. Symptoms of pneumonia caused by bacteria in otherwise healthy people younger than 65 usually come on suddenly. They often start during or after an upper respiratory infection, such as the flu or a cold. Symptoms may include: 1 Cough, often producing mucus, also called sputum, fr",
+          "labelled_correct": "Symptoms and Complications. Inhaled anthrax is by far the most dangerous form of infection, but also the rarest. The first symptoms resemble the flu and include fever, sore chest, malaise, fatigue and dry cough. The first signs of the disease can occur within 48 hours after inhalation of spores of t"
+        }
+      ]
+    }
+  }
+}

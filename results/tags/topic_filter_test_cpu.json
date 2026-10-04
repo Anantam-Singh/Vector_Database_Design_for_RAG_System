@@ -1,0 +1,91 @@
+{
+  "meta": {
+    "timestamp": "2026-10-04T00:21:26+00:00",
+    "git_commit": "uncommitted",
+    "config_fingerprint": "f873c42331",
+    "profile": "cpu",
+    "device": "cpu",
+    "hardware": {
+      "platform": "Windows-10-10.0.26300-SP0",
+      "python": "3.11.16",
+      "cpu_threads": 20,
+      "ram_gb": 15.7,
+      "torch_threads": 14,
+      "gpu": "NVIDIA GeForce RTX 3050 6GB Laptop GPU"
+    },
+    "split": "test",
+    "index_points": 100000
+  },
+  "data": {
+    "hybrid_rerank|none": {
+      "mrr@10": 0.580361,
+      "recall@5": 0.82975,
+      "hit@5": 0.844,
+      "median_ms": 111.8,
+      "n": 1000
+    },
+    "hybrid_rerank|auto1": {
+      "mrr@10": 0.444296,
+      "recall@5": 0.60775,
+      "hit@5": 0.624,
+      "median_ms": 111.7,
+      "n": 1000,
+      "route_accuracy": 0.71,
+      "mrr_vs_none": {
+        "mean_diff": -0.1361,
+        "ci95_low": -0.1581,
+        "ci95_high": -0.1123,
+        "wins": 85,
+        "ties": 639,
+        "losses": 276
+      }
+    },
+    "hybrid_rerank|auto2": {
+      "mrr@10": 0.513491,
+      "recall@5": 0.710583,
+      "hit@5": 0.726,
+      "median_ms": 114.7,
+      "n": 1000,
+      "route_accuracy": 0.841,
+      "mrr_vs_none": {
+        "mean_diff": -0.0669,
+        "ci95_low": -0.0829,
+        "ci95_high": -0.0503,
+        "wins": 58,
+        "ties": 792,
+        "losses": 150
+      }
+    },
+    "hybrid_rerank|auto3": {
+      "mrr@10": 0.542476,
+      "recall@5": 0.756083,
+      "hit@5": 0.773,
+      "median_ms": 113.2,
+      "n": 1000,
+      "route_accuracy": 0.907,
+      "mrr_vs_none": {
+        "mean_diff": -0.0379,
+        "ci95_low": -0.0514,
+        "ci95_high": -0.024,
+        "wins": 43,
+        "ties": 867,
+        "losses": 90
+      }
+    },
+    "hybrid_rerank|oracle": {
+      "mrr@10": 0.654205,
+      "recall@5": 0.880917,
+      "hit@5": 0.894,
+      "median_ms": 111.1,
+      "n": 1000,
+      "mrr_vs_none": {
+        "mean_diff": 0.0738,
+        "ci95_low": 0.062,
+        "ci95_high": 0.0865,
+        "wins": 186,
+        "ties": 804,
+        "losses": 10
+      }
+    }
+  }
+}

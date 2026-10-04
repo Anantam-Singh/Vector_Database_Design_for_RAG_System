@@ -1,0 +1,69 @@
+{
+  "meta": {
+    "timestamp": "2026-10-04T00:10:39+00:00",
+    "git_commit": "uncommitted",
+    "config_fingerprint": "f873c42331",
+    "profile": "cpu",
+    "device": "cpu",
+    "hardware": {
+      "platform": "Windows-10-10.0.26300-SP0",
+      "python": "3.11.16",
+      "cpu_threads": 20,
+      "ram_gb": 15.7,
+      "torch_threads": 14,
+      "gpu": "NVIDIA GeForce RTX 3050 6GB Laptop GPU"
+    },
+    "split": "test",
+    "search": {},
+    "index_points": 100000,
+    "filter_mode": "none",
+    "note": "dense + hybrid_rerank from the 2026-10-03 CPU run; bm25, hybrid, dense_rerank from 2026-10-04 (same CPU profile)"
+  },
+  "data": {
+    "dense": {
+      "mrr@10": 0.5327,
+      "ndcg@10": 0.6248,
+      "hit@5": 0.819,
+      "recall@5": 0.8008,
+      "precision@5": 0.174,
+      "hit@10": 0.927,
+      "n_queries": 1000
+    },
+    "bm25": {
+      "mrr@10": 0.394,
+      "ndcg@10": 0.483,
+      "hit@5": 0.635,
+      "recall@5": 0.6127,
+      "precision@5": 0.1346,
+      "hit@10": 0.798,
+      "n_queries": 1000
+    },
+    "hybrid": {
+      "mrr@10": 0.535,
+      "ndcg@10": 0.6265,
+      "hit@5": 0.824,
+      "recall@5": 0.8073,
+      "precision@5": 0.1752,
+      "hit@10": 0.93,
+      "n_queries": 1000
+    },
+    "dense_rerank": {
+      "mrr@10": 0.5862,
+      "ndcg@10": 0.6653,
+      "hit@5": 0.859,
+      "recall@5": 0.8454,
+      "precision@5": 0.1852,
+      "hit@10": 0.927,
+      "n_queries": 1000
+    },
+    "hybrid_rerank": {
+      "mrr@10": 0.5805,
+      "ndcg@10": 0.6556,
+      "hit@5": 0.844,
+      "recall@5": 0.8297,
+      "precision@5": 0.182,
+      "hit@10": 0.904,
+      "n_queries": 1000
+    }
+  }
+}

@@ -1,0 +1,121 @@
+{
+  "meta": {
+    "timestamp": "2026-10-03T23:53:50+00:00",
+    "git_commit": "uncommitted",
+    "config_fingerprint": "77cd0298c3",
+    "profile": "gpu",
+    "device": "cuda",
+    "hardware": {
+      "platform": "Windows-10-10.0.26300-SP0",
+      "python": "3.11.16",
+      "cpu_threads": 20,
+      "ram_gb": 15.7,
+      "torch_threads": 14,
+      "gpu": "NVIDIA GeForce RTX 3050 6GB Laptop GPU"
+    },
+    "index_points": 100000,
+    "index": "100k",
+    "serving": {
+      "device": "cpu",
+      "profile": "cpu",
+      "rerank_depth": 10
+    },
+    "api": "http://127.0.0.1:8765",
+    "cache": "off",
+    "note": "Same-session comparison (4 Oct 05:23). Earlier quiet run: summary_cpu_first_run.json; busy laptop: summary_cpu_recheck.json."
+  },
+  "data": {
+    "dense": {
+      "n": 100,
+      "p50_ms": 33.5,
+      "p95_ms": 42.2,
+      "p99_ms": 46.5,
+      "max_ms": 47.8,
+      "mean_ms": 32.2,
+      "pass_p95_lt_300": true,
+      "warmup_ms": [
+        99.9,
+        50.5,
+        33.1,
+        45.7,
+        24.9
+      ],
+      "median_stage_ms": {
+        "embed_dense": 14.25,
+        "qdrant": 16.34,
+        "total": 30.38
+      }
+    },
+    "hybrid": {
+      "n": 100,
+      "p50_ms": 33.2,
+      "p95_ms": 46.1,
+      "p99_ms": 50.8,
+      "max_ms": 101.7,
+      "mean_ms": 33.5,
+      "pass_p95_lt_300": true,
+      "warmup_ms": [
+        57.6,
+        42.9,
+        52.4,
+        36.1,
+        37.2
+      ],
+      "median_stage_ms": {
+        "embed_dense": 13.8,
+        "embed_bm25": 0.07,
+        "qdrant": 16.59,
+        "fusion": 0.09,
+        "total": 30.11
+      }
+    },
+    "hybrid_rerank": {
+      "n": 100,
+      "p50_ms": 110.5,
+      "p95_ms": 139.7,
+      "p99_ms": 162.3,
+      "max_ms": 163.3,
+      "mean_ms": 111.7,
+      "pass_p95_lt_300": true,
+      "warmup_ms": [
+        105.5,
+        103.2,
+        101.5,
+        124.1,
+        127.8
+      ],
+      "median_stage_ms": {
+        "embed_dense": 13.68,
+        "embed_bm25": 0.07,
+        "qdrant": 17.59,
+        "fusion": 0.09,
+        "rerank": 77.66,
+        "total": 107.38
+      }
+    },
+    "hybrid_rerank+filter": {
+      "n": 100,
+      "p50_ms": 114.3,
+      "p95_ms": 143.7,
+      "p99_ms": 163.0,
+      "max_ms": 166.4,
+      "mean_ms": 115.2,
+      "pass_p95_lt_300": true,
+      "warmup_ms": [
+        110.2,
+        112.8,
+        113.2,
+        126.2,
+        123.8
+      ],
+      "median_stage_ms": {
+        "embed_dense": 13.79,
+        "embed_bm25": 0.07,
+        "qdrant": 20.84,
+        "fusion": 0.09,
+        "rerank": 77.56,
+        "total": 110.8
+      }
+    }
+  }
+}

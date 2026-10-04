@@ -1,0 +1,443 @@
+{
+  "meta": {
+    "timestamp": "2026-10-04T00:11:21+00:00",
+    "git_commit": "uncommitted",
+    "config_fingerprint": "77cd0298c3",
+    "profile": "gpu",
+    "device": "cuda",
+    "hardware": {
+      "platform": "Windows-10-10.0.26300-SP0",
+      "python": "3.11.16",
+      "cpu_threads": 20,
+      "ram_gb": 15.7,
+      "torch_threads": 14,
+      "gpu": "NVIDIA GeForce RTX 3050 6GB Laptop GPU"
+    }
+  },
+  "data": {
+    "n_questions": 1000,
+    "case_counts": {
+      "dense_misses_top10": 176,
+      "dense_fails_hybrid_fixes(top5)": 26,
+      "dense_ok_hybrid_breaks(top5)": 20,
+      "bm25_finds_dense_misses(top10)": 41,
+      "rerank_fixes_order(to #1)": 137,
+      "rerank_hurts(#1 lost)": 74,
+      "all_methods_fail(top10)": 96
+    },
+    "breakdowns": {
+      "query_type": {
+        "description": {
+          "n": 520,
+          "dense_mrr": 0.4618,
+          "bm25_mrr": 0.3355,
+          "hybrid_mrr": 0.4679,
+          "dense_rerank_mrr": 0.5324,
+          "hybrid_rerank_mrr": 0.5339,
+          "hybrid_vs_dense": {
+            "mean_diff": 0.0061,
+            "ci95_low": -0.0053,
+            "ci95_high": 0.0174,
+            "wins": 71,
+            "ties": 407,
+            "losses": 42
+          },
+          "rerank_bm25_value": {
+            "mean_diff": 0.0015,
+            "ci95_low": -0.0096,
+            "ci95_high": 0.0121,
+            "wins": 24,
+            "ties": 469,
+            "losses": 27
+          }
+        },
+        "entity": {
+          "n": 110,
+          "dense_mrr": 0.4201,
+          "bm25_mrr": 0.3077,
+          "hybrid_mrr": 0.4449,
+          "dense_rerank_mrr": 0.4764,
+          "hybrid_rerank_mrr": 0.4745,
+          "hybrid_vs_dense": {
+            "mean_diff": 0.0249,
+            "ci95_low": 0.0044,
+            "ci95_high": 0.048,
+            "wins": 18,
+            "ties": 83,
+            "losses": 9
+          },
+          "rerank_bm25_value": {
+            "mean_diff": -0.0019,
+            "ci95_low": -0.0247,
+            "ci95_high": 0.0174,
+            "wins": 10,
+            "ties": 93,
+            "losses": 7
+          }
+        },
+        "location": {
+          "n": 47,
+          "dense_mrr": 0.4941,
+          "bm25_mrr": 0.3846,
+          "hybrid_mrr": 0.5282,
+          "dense_rerank_mrr": 0.5783,
+          "hybrid_rerank_mrr": 0.5773,
+          "hybrid_vs_dense": {
+            "mean_diff": 0.0341,
+            "ci95_low": 0.0032,
+            "ci95_high": 0.0753,
+            "wins": 7,
+            "ties": 39,
+            "losses": 1
+          },
+          "rerank_bm25_value": {
+            "mean_diff": -0.001,
+            "ci95_low": -0.0085,
+            "ci95_high": 0.0056,
+            "wins": 2,
+            "ties": 43,
+            "losses": 2
+          }
+        },
+        "numeric": {
+          "n": 293,
+          "dense_mrr": 0.4337,
+          "bm25_mrr": 0.2636,
+          "hybrid_mrr": 0.4154,
+          "dense_rerank_mrr": 0.4782,
+          "hybrid_rerank_mrr": 0.4781,
+          "hybrid_vs_dense": {
+            "mean_diff": -0.0183,
+            "ci95_low": -0.0373,
+            "ci95_high": 0.0008,
+            "wins": 40,
+            "ties": 217,
+            "losses": 36
+          },
+          "rerank_bm25_value": {
+            "mean_diff": -0.0001,
+            "ci95_low": -0.0137,
+            "ci95_high": 0.0143,
+            "wins": 26,
+            "ties": 249,
+            "losses": 18
+          }
+        },
+        "person": {
+          "n": 30,
+          "dense_mrr": 0.4621,
+          "bm25_mrr": 0.3981,
+          "hybrid_mrr": 0.4518,
+          "dense_rerank_mrr": 0.5503,
+          "hybrid_rerank_mrr": 0.5225,
+          "hybrid_vs_dense": {
+            "mean_diff": -0.0102,
+            "ci95_low": -0.0744,
+            "ci95_high": 0.0461,
+            "wins": 3,
+            "ties": 25,
+            "losses": 2
+          },
+          "rerank_bm25_value": {
+            "mean_diff": -0.0278,
+            "ci95_low": -0.0722,
+            "ci95_high": 0.0022,
+            "wins": 2,
+            "ties": 25,
+            "losses": 3
+          }
+        }
+      },
+      "has_number": {
+        "False": {
+          "n": 1000,
+          "dense_mrr": 0.4505,
+          "bm25_mrr": 0.3155,
+          "hybrid_mrr": 0.4523,
+          "dense_rerank_mrr": 0.513,
+          "hybrid_rerank_mrr": 0.5127,
+          "hybrid_vs_dense": {
+            "mean_diff": 0.0018,
+            "ci95_low": -0.0071,
+            "ci95_high": 0.0102,
+            "wins": 139,
+            "ties": 771,
+            "losses": 90
+          },
+          "rerank_bm25_value": {
+            "mean_diff": -0.0003,
+            "ci95_low": -0.0079,
+            "ci95_high": 0.0071,
+            "wins": 64,
+            "ties": 879,
+            "losses": 57
+          }
+        }
+      },
+      "length": {
+        "short (\u22644 words)": {
+          "n": 274,
+          "dense_mrr": 0.493,
+          "bm25_mrr": 0.3223,
+          "hybrid_mrr": 0.4906,
+          "dense_rerank_mrr": 0.5557,
+          "hybrid_rerank_mrr": 0.5594,
+          "hybrid_vs_dense": {
+            "mean_diff": -0.0025,
+            "ci95_low": -0.0203,
+            "ci95_high": 0.0128,
+            "wins": 37,
+            "ties": 212,
+            "losses": 25
+          },
+          "rerank_bm25_value": {
+            "mean_diff": 0.0037,
+            "ci95_low": -0.0127,
+            "ci95_high": 0.02,
+            "wins": 20,
+            "ties": 243,
+            "losses": 11
+          }
+        },
+        "medium (5\u20138)": {
+          "n": 585,
+          "dense_mrr": 0.451,
+          "bm25_mrr": 0.3348,
+          "hybrid_mrr": 0.4568,
+          "dense_rerank_mrr": 0.5239,
+          "hybrid_rerank_mrr": 0.5165,
+          "hybrid_vs_dense": {
+            "mean_diff": 0.0058,
+            "ci95_low": -0.0059,
+            "ci95_high": 0.0175,
+            "wins": 80,
+            "ties": 453,
+            "losses": 52
+          },
+          "rerank_bm25_value": {
+            "mean_diff": -0.0074,
+            "ci95_low": -0.0165,
+            "ci95_high": 0.0009,
+            "wins": 30,
+            "ties": 520,
+            "losses": 35
+          }
+        },
+        "long (9+)": {
+          "n": 141,
+          "dense_mrr": 0.3658,
+          "bm25_mrr": 0.2225,
+          "hybrid_mrr": 0.3593,
+          "dense_rerank_mrr": 0.3848,
+          "hybrid_rerank_mrr": 0.4059,
+          "hybrid_vs_dense": {
+            "mean_diff": -0.0065,
+            "ci95_low": -0.0293,
+            "ci95_high": 0.0139,
+            "wins": 22,
+            "ties": 106,
+            "losses": 13
+          },
+          "rerank_bm25_value": {
+            "mean_diff": 0.0211,
+            "ci95_low": 0.0003,
+            "ci95_high": 0.0475,
+            "wins": 14,
+            "ties": 116,
+            "losses": 11
+          }
+        }
+      }
+    },
+    "examples": {
+      "dense_fails_hybrid_fixes(top5)": [
+        {
+          "qid": 4666,
+          "query": "A fever is a rise in body temperature reading above",
+          "query_type": "numeric",
+          "ranks": {
+            "dense": 6,
+            "bm25": null,
+            "hybrid": 4,
+            "dense_rerank": 4,
+            "hybrid_rerank": 5
+          },
+          "dense_top1": "Definition. A fever is a temporary increase in your body temperature, often due to an illness. Having a fever is a sign that something out of the ordinary is going on in your body. For an adult, a fever may be uncomfortable, but usually isn't a cause for concern unless it reaches 103 F (39.4 C) or h",
+          "hybrid_rerank_top1": "Tweet. A fever, also referred to as pyrexia, is an elevation in the body temperature above the norm. This is broadly defined as oral temperature reading above 37.5 degrees Celsius (99 degrees Farenheit) and a core body temperature (rectally) above 38 degrees Celsius (100.4 degrees Farenheit). Substa",
+          "labelled_correct": "Knowledge center. A fever, or pyrexia, is a rise in internal body temperature to levels that are considered to be above normal. Average body temperature is about 98.6\u00b0F or 37\u00b0C, and temperatures above 100.4\u00b0F or 38\u00b0C are generally considered to be febrile. Body temperature is determined by the body'"
+        },
+        {
+          "qid": 8544,
+          "query": "where do the osphronemidae live",
+          "query_type": "location",
+          "ranks": {
+            "dense": 9,
+            "bm25": 6,
+            "hybrid": 3,
+            "dense_rerank": 1,
+            "hybrid_rerank": 1
+          },
+          "dense_top1": "The blue-ringed octopuses (genus Hapalochlaena) are three (or perhaps four) octopus species that live in tide pools and coral reefs in the Pacific and Indian Oceans, from Japan to Australia. Their primary habitat is around southern New South Wales, South Australia, and northern Western Australia.",
+          "hybrid_rerank_top1": "Gouramis. The Gourami family, Osphronemidae, stems from the freshwater perciform fishes. They are native to Asia, from Pakistan and India to the Malay Archipelago and further north-easterly towards Korea. The name \u201cgourami\u201d is also used for fish of the families Helostomatidae and Anabantidae. Just f",
+          "labelled_correct": "Gouramis. The Gourami family, Osphronemidae, stems from the freshwater perciform fishes. They are native to Asia, from Pakistan and India to the Malay Archipelago and further north-easterly towards Korea. The name \u201cgourami\u201d is also used for fish of the families Helostomatidae and Anabantidae. Just f"
+        },
+        {
+          "qid": 2301,
+          "query": "how much is water per month in an apartment",
+          "query_type": "numeric",
+          "ranks": {
+            "dense": 9,
+            "bm25": 1,
+            "hybrid": 5,
+            "dense_rerank": 4,
+            "hybrid_rerank": 4
+          },
+          "dense_top1": "\u00b7 just now. Report Abuse. With 2 people living in my apartment we usually pay $40/month in Summer and $70-$90 in winter when we have a space heater going during the day for electric. Our water is paid by our property management.. and we don't have gas, but the average gas bill is $30/month. For a 90",
+          "hybrid_rerank_top1": "\u00b7 just now. Report Abuse. With 2 people living in my apartment we usually pay $40/month in Summer and $70-$90 in winter when we have a space heater going during the day for electric. Our water is paid by our property management.. and we don't have gas, but the average gas bill is $30/month. For a 90",
+          "labelled_correct": "Report Abuse. Most apartments in DFW do not have gas. Electric averages around 75 per month over a year with some months being as much as 140 and others in the 40s. Water is around 30 a month. Trash is usually part of the rent. Internet depends on which service you get. Mine is around 30 a month for"
+        }
+      ],
+      "rerank_fixes_order(to #1)": [
+        {
+          "qid": 5305,
+          "query": "what do the folds in the mitochondria membranes do",
+          "query_type": "description",
+          "ranks": {
+            "dense": 2,
+            "bm25": null,
+            "hybrid": 3,
+            "dense_rerank": 1,
+            "hybrid_rerank": 1
+          },
+          "dense_top1": "Answer by Propsie. Confidence votes 661. The mitochondria itself is not highly folded. The inner membrane of the mitochondria is, and this increases the surface area of the membrane while not changing the volume enclosed by it. The inner membrane contains ATP synthase, which is an enzyme that stimul",
+          "hybrid_rerank_top1": "The folds in the inner membrane of the mitochondria are called cristae. They serve to provide a greater surface area for the proton-pump through which protons pass down their \u2026 concentration gradient through ATP synthase to produce ATP in cellular respiration. 1 person found this useful.",
+          "labelled_correct": "The folds in the inner membrane of the mitochondria are called cristae. They serve to provide a greater surface area for the proton-pump through which protons pass down their \u2026 concentration gradient through ATP synthase to produce ATP in cellular respiration. 1 person found this useful."
+        },
+        {
+          "qid": 9840,
+          "query": "what is postscript",
+          "query_type": "description",
+          "ranks": {
+            "dense": 10,
+            "bm25": null,
+            "hybrid": 10,
+            "dense_rerank": 1,
+            "hybrid_rerank": 1
+          },
+          "dense_top1": "PostScript is a programming language optimized for printing graphics and text (whether on paper, film, or. is immaterial). In the jargon of the day, it is a page description language. It was introduced by Adobe in 1985 and first (to my knowledge) appeared in the Apple LaserWriter. The main purpose o",
+          "hybrid_rerank_top1": "PostScript (PS) is a computer language for creating vector graphics. It is a dynamically typed, concatenative programming language and was created by John Warnock, Charles Geschke, Doug Brotz, Ed Taft and Bill Paxton in 1982. It is used as a page description language in the electronic and desktop pu",
+          "labelled_correct": "PostScript (PS) is a computer language for creating vector graphics. It is a dynamically typed, concatenative programming language and was created by John Warnock, Charles Geschke, Doug Brotz, Ed Taft and Bill Paxton in 1982. It is used as a page description language in the electronic and desktop pu"
+        },
+        {
+          "qid": 4569,
+          "query": "is gelatin good for digestion",
+          "query_type": "description",
+          "ranks": {
+            "dense": 9,
+            "bm25": 4,
+            "hybrid": 7,
+            "dense_rerank": 1,
+            "hybrid_rerank": 1
+          },
+          "dense_top1": "Gelatin is very good in soothing the digestive tract and healing the mucous membrane of the intestines. Both the naturally occurring gelatin in a homemade soup or broth, and also the store bought unflavored packets can be beneficial. It\u2019s really quick and easy to make with some fruit juice and boili",
+          "hybrid_rerank_top1": "Gelatin helps promote digestion in two ways: by stimulating stomach acid production and by moving stomach acid away from the stomach walls towards the food being digested. Contrary to popular belief, digestion problems are often connected to too little stomach acid production, not too much. As a foo",
+          "labelled_correct": "Gelatin helps promote digestion in two ways: by stimulating stomach acid production and by moving stomach acid away from the stomach walls towards the food being digested. Contrary to popular belief, digestion problems are often connected to too little stomach acid production, not too much. As a foo"
+        }
+      ],
+      "rerank_hurts(#1 lost)": [
+        {
+          "qid": 4633,
+          "query": "what determines social security disability",
+          "query_type": "description",
+          "ranks": {
+            "dense": 1,
+            "bm25": null,
+            "hybrid": 1,
+            "dense_rerank": 3,
+            "hybrid_rerank": 4
+          },
+          "dense_top1": "It is important for the Social Security Administration (SSA) to determine your onset date of disability because it may affect your benefit pay period or even your eligibility for Social Security Disability Insurance (SSDI) or Supplemental Security Income (SSI) benefits.",
+          "hybrid_rerank_top1": "How Disability is Determined. To determine whether someone is disabled under their laws, the Social Security Administration uses a five-step evaluation process.",
+          "labelled_correct": "It is important for the Social Security Administration (SSA) to determine your onset date of disability because it may affect your benefit pay period or even your eligibility for Social Security Disability Insurance (SSDI) or Supplemental Security Income (SSI) benefits."
+        },
+        {
+          "qid": 1039,
+          "query": "who named the cell phone",
+          "query_type": "person",
+          "ranks": {
+            "dense": 2,
+            "bm25": 8,
+            "hybrid": 1,
+            "dense_rerank": 3,
+            "hybrid_rerank": 3
+          },
+          "dense_top1": "Answers. Best Answer: Martin Cooper-Inventor of the cellphone Martin Cooper-Inventor Of The Cellphone ... handset and the first person to make a call on a portable cell phone in April 1973. ...www.cellular.co.za/cellphone_inventor... Source(s):",
+          "hybrid_rerank_top1": "well the inventor of the cell phone is named martin cooper and he is the man responsible for the generation and development of the very first cell phone although it was a research team associated with at t that first introduced the whole idea of cellular communications in 1947",
+          "labelled_correct": "Well, the inventor of the cell phone is named Martin Cooper and he is the man responsible for the generation and development of the very first cell phone. Although, it was a research team associated with AT&T that first introduced the whole idea of cellular communications in 1947. Search No More for"
+        },
+        {
+          "qid": 1987,
+          "query": "what features are found in theropods",
+          "query_type": "entity",
+          "ranks": {
+            "dense": 4,
+            "bm25": 2,
+            "hybrid": 1,
+            "dense_rerank": 3,
+            "hybrid_rerank": 3
+          },
+          "dense_top1": "All arthropods have a heart. Crustaceans and arachnids have respiratory pigments. Most insects do not have respiratory pigments, since their blood does not carry gases (in insects, gases reach tissues and cells through tracheal structures). However, some insects do have the respiratory pigment hemog",
+          "hybrid_rerank_top1": "Among the features linking theropod dinosaurs to birds are the three-toed foot, a furcula (wishbone), air-filled bones, brooding of the eggs, and (in some cases) feathers. The smallest non-avian full adult specimen is the Anchiornis, which weighed only 3.38 ounces, and was less than 1 foot long.",
+          "labelled_correct": "On July 31, 2014, scientists reported details of the evolution of birds from other theropod dinosaurs. Among the features linking theropod dinosaurs to birds are a furcula (wishbone), air-filled bones, brooding of the eggs, and (in coelurosaurs, at least) feathers."
+        }
+      ],
+      "all_methods_fail(top10)": [
+        {
+          "qid": 9410,
+          "query": "what is muscle",
+          "query_type": "description",
+          "ranks": {
+            "dense": null,
+            "bm25": null,
+            "hybrid": null,
+            "dense_rerank": null,
+            "hybrid_rerank": null
+          },
+          "dense_top1": "Muscle is a band or bundle of tissue consisting of fibers that have the ability to contract. In addition to water, muscles mostly consist of protein, particularly actin and myosin, the interaction of which converts chemical energy into mechanical energy. Muscle mass is the main goal of weightlifting",
+          "hybrid_rerank_top1": "Muscle is a band or bundle of tissue consisting of fibers that have the ability to contract. In addition to water, muscles mostly consist of protein, particularly actin and myosin, the interaction of which converts chemical energy into mechanical energy. Muscle mass is the main goal of weightlifting",
+          "labelled_correct": "Muscle is a soft tissue found in most animals. Muscle cells contain protein filaments of actin and myosin that slide past one another, producing a contraction that changes both the length and the shape of the cell. Muscles function to produce force and motion. 1 Type I, slow twitch, or red muscle, i"
+        },
+        {
+          "qid": 7584,
+          "query": "where are your ribs in your back located",
+          "query_type": "location",
+          "ranks": {
+            "dense": null,
+            "bm25": null,
+            "hybrid": null,
+            "dense_rerank": null,
+            "hybrid_rerank": null
+          },
+          "dense_top1": "1. Get help from a doctor now \u203a. under ribs: The lungs in the front and back are inside the rib cage. This is why doctors will place a stethoscope on the back as well as the front to evaluate the function of the lungs. ...Read more. 1 Where are your kidneys located on your back in women. 2 Where are",
+          "hybrid_rerank_top1": "Making the world better, one answer at a time. The ribs are located under your chest. your stomach is in the middle and the ribs are on both sides. There are twelve pairs of ribs in human body that is a total of 24 ribs with 12 on either side of the rib cage. The 11th and the 12th ribs are called fl",
+          "labelled_correct": "Your Kidney Location and Anatomy. You have two kidneys and the kidney location is on either side of the spine at the edge of your ribs. Each kidney is contained within a strong fibrous covering called the renal capsule. The Renal Capsule. The renal capsule is tough and protects the kidney, but it do"
+        },
+        {
+          "qid": 5044,
+          "query": "Plasmodium, the parasitic organism that causes malaria, is a",
+          "query_type": "entity",
+          "ranks": {
+            "dense": null,
+            "bm25": null,
+            "hybrid": null,
+            "dense_rerank": null,
+            "hybrid_rerank": null
+          },
+          "dense_top1": "Plasmodium, commonly known as the malaria parasite, is a large genus of parasitic protozoa. As with some other genera of clinically important microorganisms, the genus name also yields a common noun; thus species of the genus are known as plasmodia. The parasite is thought to have originated from Di",
+          "hybrid_rerank_top1": "Plasmodium, commonly known as the malaria parasite, is a large genus of parasitic protozoa. As with some other genera of clinically important microorganisms, the genus name also yields a common noun; thus species of the genus are known as plasmodia. The parasite is thought to have originated from Di",
+          "labelled_correct": "by Leah Chandler. Disease Etiology: Malaria is a protozoan disease, which are a group of eukaryotic single-celled organisms that infect humans and inhabit the body as parasites. Malaria is caused by four species of the protozoan genus Plasmodium, P falciparum, P vivax, P malariae, and P ovale. [1]."
+        }
+      ]
+    }
+  }
+}

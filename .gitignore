@@ -1,0 +1,24 @@
+# secrets
+.env
+
+# environments and caches
+.venv/
+.cache/
+__pycache__/
+*.pyc
+.pytest_cache/
+
+# large local data (never commit)
+qdrant_bin/
+qdrant_storage/
+.qdrant-initialized
+*.zip
+data/
+*.parquet
+results/checkpoints/
+
+# editor / OS
+.vscode/
+.idea/
+Thumbs.db
+.DS_Store

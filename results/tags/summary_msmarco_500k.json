@@ -1,0 +1,54 @@
+{
+  "meta": {
+    "timestamp": "2026-10-03T21:36:40+00:00",
+    "git_commit": "uncommitted",
+    "config_fingerprint": "783e8c2dab",
+    "profile": "gpu",
+    "device": "cuda",
+    "hardware": {
+      "platform": "Windows-10-10.0.26300-SP0",
+      "python": "3.11.16",
+      "cpu_threads": 20,
+      "ram_gb": 15.7,
+      "torch_threads": 14,
+      "gpu": "NVIDIA GeForce RTX 3050 6GB Laptop GPU"
+    }
+  },
+  "data": {
+    "collection": "msmarco_500k",
+    "passages": 500000,
+    "seconds": 663.1,
+    "topics": {
+      "Health & Medicine": 100758,
+      "Language & Education": 52552,
+      "Money & Finance": 51570,
+      "Food & Nutrition": 46772,
+      "Animals & Nature": 44851,
+      "Science": 44402,
+      "Places & Travel": 42558,
+      "Business & Careers": 29432,
+      "Home & Construction": 20022,
+      "Law & Government": 13868,
+      "History & Society": 13761,
+      "Arts & Entertainment": 11107,
+      "Sports & Fitness": 9997,
+      "Transport & Vehicles": 9444,
+      "Technology": 8906
+    },
+    "source_types": {
+      "commercial": 220336,
+      "reference": 79057,
+      "community": 58095,
+      "health": 41684,
+      "organization": 39444,
+      "education": 24511,
+      "government": 21223,
+      "news": 15650
+    },
+    "corpus": {
+      "web": 500000
+    },
+    "topic_margin_median": 0.0463,
+    "n_topics": 15
+  }
+}

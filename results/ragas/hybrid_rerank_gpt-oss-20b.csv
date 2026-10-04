@@ -1,0 +1,17 @@
+qid,query_type,user_input,reference,llm_context_precision_with_reference,context_recall,mode,judge
+8264,numeric,how long do shingles spots last,3 to 5 weeks,0.499999999975,0.0,hybrid_rerank,openai/gpt-oss-20b
+4666,numeric,A fever is a rise in body temperature reading above,100.4°F or 38°C,0.6999999999766667,1.0,hybrid_rerank,openai/gpt-oss-20b
+9561,description,what is the mammalian version of a blastula,Blastocyst,0.9999999999,1.0,hybrid_rerank,openai/gpt-oss-20b
+1793,description,what does meristem culture,The culture of excised meristems on suitable nutrient media under aseptic conditions.,0.94999999997625,1.0,hybrid_rerank,openai/gpt-oss-20b
+5305,description,what do the folds in the mitochondria membranes do,The folds in the inner membrane of the mitochondria are called cristae. They serve to provide a greater surface area for the proton-pump through which protons pass down their concentration gradient through ATP synthase to produce ATP in cellular respiration.,0.99999999998,1.0,hybrid_rerank,openai/gpt-oss-20b
+4633,description,what determines social security disability,Determine your onset date of disability because it may affect your benefit pay period or even your eligibility for Social Security Disability Insurance (SSDI) or Supplemental Security Income (SSI) benefits.,0.3333333333,1.0,hybrid_rerank,openai/gpt-oss-20b
+7495,entity,benadryl dosage for dogs,If your dog weighs 25 lbs (11.3 kg) the dose of Benadryl would be 22.6mg to 45.2mg up to three times a day. Benadryl tablets are available in 25mg and 50mg strength. If you were using the Benadryl 25mg tablet you could give 1 to 2 tablets up to three times day,0.99999999998,1.0,hybrid_rerank,openai/gpt-oss-20b
+7584,location,where are your ribs in your back located,Over your kidney.,0.0,0.0,hybrid_rerank,openai/gpt-oss-20b
+6794,numeric,how much cost skip hire,220,0.8055555555287036,1.0,hybrid_rerank,openai/gpt-oss-20b
+9840,description,what is postscript,A computer language for creating vector graphics.,0.8874999999778125,1.0,hybrid_rerank,openai/gpt-oss-20b
+9701,description,what does uganda mean,Uganda does not have a real meaning. It was the Swahili word used to refer to the traditional kingdom of Buganda in Central Uganda.,0.9999999999,1.0,hybrid_rerank,openai/gpt-oss-20b
+2840,description,the medial concavity of the kidney is called the,The renal hilus,0.99999999998,1.0,hybrid_rerank,openai/gpt-oss-20b
+6692,description,what do people use compasses for,navigation location and direction,0.99999999998,1.0,hybrid_rerank,openai/gpt-oss-20b
+4569,description,is gelatin good for digestion,Yes,0.99999999998,0.0,hybrid_rerank,openai/gpt-oss-20b
+5044,entity,"Plasmodium, the parasitic organism that causes malaria, is a",Yes,0.94999999997625,0.0,hybrid_rerank,openai/gpt-oss-20b
+3472,numeric,how much does a surgeon make in canada,"$69,000 and $348,000",0.0,0.0,hybrid_rerank,openai/gpt-oss-20b

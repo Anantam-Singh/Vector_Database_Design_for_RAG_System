@@ -1,0 +1,8 @@
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+corpus: 100,000 unique passages (80,797 validation) in 7s | profile=cpu device=cpu
+Loading weights:   0%|          | 0/199 [00:00<?, ?it/s]Loading weights: 100%|██████████| 199/199 [00:00<00:00, 3014.74it/s]
+  32,768/100,000  dense 6.7 min | bm25 0.0 min | upload 0.1 min
+  65,536/100,000  dense 13.5 min | bm25 0.1 min | upload 0.2 min
+  98,304/100,000  dense 20.4 min | bm25 0.1 min | upload 0.4 min
+  100,000/100,000  dense 20.7 min | bm25 0.1 min | upload 0.4 min
+DONE: 100,000 points in 21.6 min (limit 120) -> PASS | saved index_build_100000_cpu.json

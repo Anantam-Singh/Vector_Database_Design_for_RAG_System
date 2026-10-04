@@ -1,0 +1,5 @@
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+Loading weights:   0%|          | 0/199 [00:00<?, ?it/s]Loading weights: 100%|██████████| 199/199 [00:00<00:00, 2744.31it/s]
+Loading weights:   0%|          | 0/105 [00:00<?, ?it/s]Loading weights: 100%|██████████| 105/105 [00:00<00:00, 4240.71it/s]
+dense          mrr@10 0.533 | ndcg@10 0.625 | hit@5 0.819 | recall@5 0.801 | precision@5 0.174 | hit@10 0.927
+hybrid_rerank  mrr@10 0.581 | ndcg@10 0.656 | hit@5 0.844 | recall@5 0.830 | precision@5 0.182 | hit@10 0.904

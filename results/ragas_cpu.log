@@ -1,0 +1,17 @@
+Groq keys in use: #7
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+Loading weights:   0%|          | 0/199 [00:00<?, ?it/s]Loading weights: 100%|██████████| 199/199 [00:00<00:00, 2834.33it/s]
+Loading weights:   0%|          | 0/199 [00:00<?, ?it/s]Loading weights: 100%|██████████| 199/199 [00:00<00:00, 2870.87it/s]
+Loading weights:   0%|          | 0/105 [00:00<?, ?it/s]Loading weights: 100%|██████████| 105/105 [00:00<00:00, 2650.07it/s]
+[hybrid_rerank] judge=openai/gpt-oss-120b | 0 done, 50 to go
+  +5 scored, 0 failed (left for later) in 185s | key #7 | Groq requests left today: 969/1000
+  +5 scored, 0 failed (left for later) in 173s | key #7 | Groq requests left today: 939/1000
+  +5 scored, 0 failed (left for later) in 126s | key #7 | Groq requests left today: 909/1000
+  +5 scored, 0 failed (left for later) in 109s | key #7 | Groq requests left today: 879/1000
+  +5 scored, 0 failed (left for later) in 108s | key #7 | Groq requests left today: 849/1000
+  +5 scored, 0 failed (left for later) in 108s | key #7 | Groq requests left today: 819/1000
+  +5 scored, 0 failed (left for later) in 135s | key #7 | Groq requests left today: 789/1000
+  +5 scored, 0 failed (left for later) in 109s | key #7 | Groq requests left today: 759/1000
+  +5 scored, 0 failed (left for later) in 92s | key #7 | Groq requests left today: 729/1000
+  +5 scored, 0 failed (left for later) in 91s | key #7 | Groq requests left today: 699/1000
+[hybrid_rerank] Context Precision 0.809 | Context Recall 0.900 | n=50

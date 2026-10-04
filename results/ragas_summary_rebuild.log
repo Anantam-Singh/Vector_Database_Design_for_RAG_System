@@ -1,0 +1,11 @@
+Groq keys in use: #2
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+Loading weights:   0%|          | 0/199 [00:00<?, ?it/s]Loading weights:  67%|######7   | 134/199 [00:00<00:00, 1332.25it/s]Loading weights: 100%|##########| 199/199 [00:00<00:00, 1600.79it/s]
+Loading weights:   0%|          | 0/105 [00:00<?, ?it/s]Loading weights: 100%|##########| 105/105 [00:00<00:00, 1661.61it/s]
+[hybrid] judge=openai/gpt-oss-120b | 47 done, 3 to go
+  +3 scored, 0 failed (left for later) in 67s | key #2 | Groq requests left today: 956/1000
+[hybrid] Context Precision 0.794 | Context Recall 0.840 | n=50
+[dense] judge=openai/gpt-oss-120b | 50 done, 0 to go
+[dense] Context Precision 0.788 | Context Recall 0.860 | n=50
+[hybrid_rerank] judge=openai/gpt-oss-120b | 50 done, 0 to go
+[hybrid_rerank] Context Precision 0.815 | Context Recall 0.900 | n=50

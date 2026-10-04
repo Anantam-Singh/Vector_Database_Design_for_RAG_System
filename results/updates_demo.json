@@ -1,0 +1,60 @@
+{
+  "meta": {
+    "timestamp": "2026-10-02T18:52:22+00:00",
+    "git_commit": "uncommitted",
+    "config_fingerprint": "56c12b01ad",
+    "profile": "gpu",
+    "device": "cuda",
+    "hardware": {
+      "platform": "Windows-10-10.0.26300-SP0",
+      "python": "3.11.16",
+      "cpu_threads": 20,
+      "ram_gb": 15.7,
+      "torch_threads": 14,
+      "gpu": "NVIDIA GeForce RTX 3050 6GB Laptop GPU"
+    }
+  },
+  "data": {
+    "steps": [
+      {
+        "step": "0. before insert: not in index",
+        "pass": true,
+        "detail": "document absent from top-10"
+      },
+      {
+        "step": "1. insert v1",
+        "pass": true,
+        "detail": "status=inserted in 68.8 ms; rank=1, version=1"
+      },
+      {
+        "step": "2. same text again (dedup)",
+        "pass": true,
+        "detail": "status=unchanged \u2014 no re-embedding, no duplicate"
+      },
+      {
+        "step": "3. update to v2 (stale prevention)",
+        "pass": true,
+        "detail": "status=updated in 83.8 ms; only v2 returned, v1 gone, exactly 1 copy"
+      },
+      {
+        "step": "4. metadata filter on the new doc",
+        "pass": true,
+        "detail": "source=hr-policy.internal filter returns it"
+      },
+      {
+        "step": "5. metadata-only update",
+        "pass": true,
+        "detail": "status=metadata_updated in 40.0 ms; vectors untouched, category changed"
+      },
+      {
+        "step": "6. delete",
+        "pass": true,
+        "detail": "status=deleted in 37.4 ms; gone from search and GET returns 404"
+      }
+    ],
+    "passed": 7,
+    "total": 7,
+    "points_after": 100000,
+    "index_version": 4
+  }
+}

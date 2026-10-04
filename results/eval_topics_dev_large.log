@@ -1,0 +1,11 @@
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+Loading weights:   0%|          | 0/199 [00:00<?, ?it/s]Loading weights: 100%|██████████| 199/199 [00:00<00:00, 2570.79it/s]
+Loading weights:   0%|          | 0/105 [00:00<?, ?it/s]Loading weights: 100%|██████████| 105/105 [00:00<00:00, 3002.61it/s]
+  dev_large hybrid_rerank  none    done
+  dev_large hybrid_rerank  auto1   done
+  dev_large hybrid_rerank  auto2   done
+  dev_large hybrid_rerank  oracle  done
+hybrid_rerank|none       MRR 0.598 R@5 0.848 median 51.3 ms
+hybrid_rerank|auto1      MRR 0.444 R@5 0.605 median 59.9 ms | route acc 70.5% | dMRR -0.154 [-0.176, -0.131]
+hybrid_rerank|auto2      MRR 0.522 R@5 0.732 median 62.6 ms | route acc 86.6% | dMRR -0.075 [-0.092, -0.059]
+hybrid_rerank|oracle     MRR 0.665 R@5 0.888 median 61.7 ms | dMRR +0.067 [+0.056, +0.078]

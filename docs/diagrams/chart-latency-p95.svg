@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" class="dg" viewBox="0 0 780 236" width="780" height="236"><title>p95 latency, 100 consecutive queries</title><style>
+.dg text{font-family:'Segoe UI', Arial, sans-serif;}
+.d-bg{fill:#fdfcf8}
+.d-box{fill:#fdfcf8;stroke:#dedcd3;stroke-width:1.2}
+.d-soft{fill:#f5f4ef;stroke:#dedcd3;stroke-width:1.2}
+.d-a{fill:#e6edfb;stroke:#2a5fd8;stroke-width:1.4}
+.d-w{fill:#fbeedd;stroke:#d9782a;stroke-width:1.4}
+.d-g{fill:#e3f4ec;stroke:#0f7a55;stroke-width:1.4}
+.d-r{fill:#fbe6e3;stroke:#b8322a;stroke-width:1.4}
+.d-t{fill:#13202f;font-size:13.5px;font-weight:600}
+.d-s{fill:#44505f;font-size:12px}
+.d-m{fill:#6b7480;font-size:11px;letter-spacing:.06em;font-family:Consolas, 'Courier New', monospace}
+.d-ln{stroke:#6b7480;stroke-width:1.5;fill:none}
+.d-ah{fill:#6b7480}
+.c-a{fill:#2a5fd8}.c-w{fill:#d9782a}.c-g{fill:#0f7a55}.c-b{fill:#b8322a}.c-m{fill:#6b7480}.c-i{fill:#13202f}
+.c-ax{stroke:#e7e5dd;stroke-width:1}
+.c-tg{stroke:#b8322a;stroke-width:2;stroke-dasharray:5 4}
+.c-tgt{fill:#b8322a;font-size:12px}
+.c-t{fill:#44505f;font-size:12px}
+.c-v{fill:#13202f;font-size:12px;font-weight:600;font-variant-numeric:tabular-nums}
+.c-la{stroke:#2a5fd8;stroke-width:2.5;fill:none}
+.c-lw{stroke:#d9782a;stroke-width:2.5;fill:none;stroke-dasharray:6 4}
+.c-ring{stroke:#2a5fd8;stroke-width:2;fill:none}
+</style><defs><marker id="ah-chart-latency-p95" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" class="d-ah"/></marker></defs><rect width="780" height="236" class="d-bg"/><line x1="210.0" x2="210.0" y1="4" y2="212" class="c-ax"/><text x="210.0" y="229.0" text-anchor="middle" class="c-t" >0 ms</text><line x1="332.5" x2="332.5" y1="4" y2="212" class="c-ax"/><text x="332.5" y="229.0" text-anchor="middle" class="c-t" >80 ms</text><line x1="455.0" x2="455.0" y1="4" y2="212" class="c-ax"/><text x="455.0" y="229.0" text-anchor="middle" class="c-t" >160 ms</text><line x1="577.5" x2="577.5" y1="4" y2="212" class="c-ax"/><text x="577.5" y="229.0" text-anchor="middle" class="c-t" >240 ms</text><line x1="700.0" x2="700.0" y1="4" y2="212" class="c-ax"/><text x="700.0" y="229.0" text-anchor="middle" class="c-t" >320 ms</text><text x="200.0" y="27.0" text-anchor="end" class="c-t" >Dense</text><rect x="210" y="6" width="64.6" height="15" rx="3" class="c-a"/><text x="280.6" y="18.0" text-anchor="start" class="c-v" >42 ms</text><rect x="210" y="25" width="65.4" height="15" rx="3" class="c-w"/><text x="281.4" y="37.0" text-anchor="start" class="c-v" >43 ms</text><text x="200.0" y="77.0" text-anchor="end" class="c-t" >Hybrid</text><rect x="210" y="56" width="70.6" height="15" rx="3" class="c-a"/><text x="286.6" y="68.0" text-anchor="start" class="c-v" >46 ms</text><rect x="210" y="75" width="83.6" height="15" rx="3" class="c-w"/><text x="299.6" y="87.0" text-anchor="start" class="c-v" >55 ms</text><text x="200.0" y="127.0" text-anchor="end" class="c-t" >Phase 2 (hybrid + reranker)</text><rect x="210" y="106" width="213.9" height="15" rx="3" class="c-a"/><text x="429.9" y="118.0" text-anchor="start" class="c-v" >140 ms</text><rect x="210" y="125" width="116.7" height="15" rx="3" class="c-w"/><text x="332.7" y="137.0" text-anchor="start" class="c-v" >76 ms</text><text x="200.0" y="177.0" text-anchor="end" class="c-t" >Phase 2 + metadata filter</text><rect x="210" y="156" width="220.0" height="15" rx="3" class="c-a"/><text x="436.0" y="168.0" text-anchor="start" class="c-v" >144 ms</text><rect x="210" y="175" width="123.4" height="15" rx="3" class="c-w"/><text x="339.4" y="187.0" text-anchor="start" class="c-v" >81 ms</text><line x1="669.4" x2="669.4" y1="2" y2="212" class="c-tg"/><text x="664.4" y="13.0" text-anchor="end" class="c-tgt" >300 ms target</text></svg>

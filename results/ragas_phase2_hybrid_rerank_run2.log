@@ -1,0 +1,14 @@
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+Loading weights:   0%|          | 0/199 [00:00<?, ?it/s]Loading weights: 100%|##########| 199/199 [00:00<00:00, 3099.39it/s]
+Loading weights:   0%|          | 0/105 [00:00<?, ?it/s]Loading weights: 100%|##########| 105/105 [00:00<00:00, 2758.25it/s]
+[hybrid_rerank] judge=openai/gpt-oss-120b | 25 done, 25 to go
+  +5 scored, 0 failed (left for later) in 75s | Groq requests left today: 795/1000
+  +5 scored, 0 failed (left for later) in 118s | Groq requests left today: 765/1000
+  +5 scored, 0 failed (left for later) in 102s | Groq requests left today: 735/1000
+  +5 scored, 0 failed (left for later) in 98s | Groq requests left today: 705/1000
+Exception raised in Job[3]: RateLimitError(Error code: 429 - {'error': {'message': 'Rate limit reached for model `openai/gpt-oss-120b` in organization `org_01m3yv7n5beed9m54qwk5vpwdm` service tier `on_demand` on tokens per day (TPD): Limit 200000, Used 198634, Requested 1654. Please try again in 2m4.416s. Need more tokens? Upgrade to Dev Tier today at https://console.groq.com/settings/billing', 'type': 'tokens', 'code': 'rate_limit_exceeded'}})
+Exception raised in Job[7]: RateLimitError(Error code: 429 - {'error': {'message': 'Rate limit reached for model `openai/gpt-oss-120b` in organization `org_01m3yv7n5beed9m54qwk5vpwdm` service tier `on_demand` on tokens per day (TPD): Limit 200000, Used 199003, Requested 1530. Please try again in 3m50.255999999s. Need more tokens? Upgrade to Dev Tier today at https://console.groq.com/settings/billing', 'type': 'tokens', 'code': 'rate_limit_exceeded'}})
+Exception raised in Job[9]: RateLimitError(Error code: 429 - {'error': {'message': 'Rate limit reached for model `openai/gpt-oss-120b` in organization `org_01m3yv7n5beed9m54qwk5vpwdm` service tier `on_demand` on tokens per day (TPD): Limit 200000, Used 199001, Requested 2045. Please try again in 7m31.872s. Need more tokens? Upgrade to Dev Tier today at https://console.groq.com/settings/billing', 'type': 'tokens', 'code': 'rate_limit_exceeded'}})
+Exception raised in Job[8]: TimeoutError()
+  +2 scored, 3 failed (left for later) in 452s | Groq requests left today: 683/1000
+[hybrid_rerank] Context Precision 0.824 | Context Recall 0.894 | n=47

@@ -1,0 +1,75 @@
+{
+  "meta": {
+    "timestamp": "2026-10-03T21:43:39+00:00",
+    "git_commit": "uncommitted",
+    "config_fingerprint": "783e8c2dab",
+    "profile": "gpu",
+    "device": "cuda",
+    "hardware": {
+      "platform": "Windows-10-10.0.26300-SP0",
+      "python": "3.11.16",
+      "cpu_threads": 20,
+      "ram_gb": 15.7,
+      "torch_threads": 14,
+      "gpu": "NVIDIA GeForce RTX 3050 6GB Laptop GPU"
+    },
+    "split": "dev_large",
+    "index_points": 100000
+  },
+  "data": {
+    "hybrid_rerank|none": {
+      "mrr@10": 0.597696,
+      "recall@5": 0.848167,
+      "hit@5": 0.864,
+      "median_ms": 51.3,
+      "n": 1000
+    },
+    "hybrid_rerank|auto1": {
+      "mrr@10": 0.444045,
+      "recall@5": 0.605333,
+      "hit@5": 0.625,
+      "median_ms": 59.9,
+      "n": 1000,
+      "route_accuracy": 0.705,
+      "mrr_vs_none": {
+        "mean_diff": -0.1537,
+        "ci95_low": -0.1764,
+        "ci95_high": -0.1312,
+        "wins": 91,
+        "ties": 627,
+        "losses": 282
+      }
+    },
+    "hybrid_rerank|auto2": {
+      "mrr@10": 0.522479,
+      "recall@5": 0.732083,
+      "hit@5": 0.75,
+      "median_ms": 62.6,
+      "n": 1000,
+      "route_accuracy": 0.866,
+      "mrr_vs_none": {
+        "mean_diff": -0.0752,
+        "ci95_low": -0.0925,
+        "ci95_high": -0.0589,
+        "wins": 63,
+        "ties": 805,
+        "losses": 132
+      }
+    },
+    "hybrid_rerank|oracle": {
+      "mrr@10": 0.664649,
+      "recall@5": 0.887833,
+      "hit@5": 0.902,
+      "median_ms": 61.7,
+      "n": 1000,
+      "mrr_vs_none": {
+        "mean_diff": 0.067,
+        "ci95_low": 0.0564,
+        "ci95_high": 0.0781,
+        "wins": 199,
+        "ties": 797,
+        "losses": 4
+      }
+    }
+  }
+}

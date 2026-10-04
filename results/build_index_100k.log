@@ -1,0 +1,8 @@
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+corpus: 100,000 unique passages (81,039 validation) in 9s | profile=gpu device=cuda
+Loading weights:   0%|          | 0/199 [00:00<?, ?it/s]Loading weights:  68%|######8   | 136/199 [00:00<00:00, 1276.71it/s]Loading weights: 100%|##########| 199/199 [00:00<00:00, 1721.05it/s]
+  32,768/100,000  dense 0.5 min | bm25 0.1 min | upload 0.3 min
+  65,536/100,000  dense 1.1 min | bm25 0.2 min | upload 0.5 min
+  98,304/100,000  dense 1.6 min | bm25 0.3 min | upload 0.7 min
+  100,000/100,000  dense 1.6 min | bm25 0.3 min | upload 0.8 min
+DONE: 100,000 points in 3.4 min (limit 120) -> PASS | saved index_build_100000.json

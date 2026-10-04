@@ -1,0 +1,59 @@
+{
+  "meta": {
+    "timestamp": "2026-10-03T21:47:36+00:00",
+    "git_commit": "uncommitted",
+    "config_fingerprint": "783e8c2dab",
+    "profile": "gpu",
+    "device": "cuda",
+    "hardware": {
+      "platform": "Windows-10-10.0.26300-SP0",
+      "python": "3.11.16",
+      "cpu_threads": 20,
+      "ram_gb": 15.7,
+      "torch_threads": 14,
+      "gpu": "NVIDIA GeForce RTX 3050 6GB Laptop GPU"
+    },
+    "split": "test",
+    "index_points": 100000
+  },
+  "data": {
+    "hybrid_rerank|none": {
+      "mrr@10": 0.592187,
+      "recall@5": 0.856667,
+      "hit@5": 0.871,
+      "median_ms": 58.4,
+      "n": 1000
+    },
+    "hybrid_rerank|auto2": {
+      "mrr@10": 0.52305,
+      "recall@5": 0.730167,
+      "hit@5": 0.745,
+      "median_ms": 60.8,
+      "n": 1000,
+      "route_accuracy": 0.841,
+      "mrr_vs_none": {
+        "mean_diff": -0.0691,
+        "ci95_low": -0.0848,
+        "ci95_high": -0.0534,
+        "wins": 60,
+        "ties": 787,
+        "losses": 153
+      }
+    },
+    "hybrid_rerank|oracle": {
+      "mrr@10": 0.663533,
+      "recall@5": 0.903167,
+      "hit@5": 0.915,
+      "median_ms": 69.6,
+      "n": 1000,
+      "mrr_vs_none": {
+        "mean_diff": 0.0713,
+        "ci95_low": 0.06,
+        "ci95_high": 0.0828,
+        "wins": 191,
+        "ties": 804,
+        "losses": 5
+      }
+    }
+  }
+}

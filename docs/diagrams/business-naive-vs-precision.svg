@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" class="dg" viewBox="0 0 940 284" width="940" height="284"><title>Naive RAG versus PrecisionRAG retrieval</title><style>
+.dg text{font-family:'Segoe UI', Arial, sans-serif;}
+.d-bg{fill:#fdfcf8}
+.d-box{fill:#fdfcf8;stroke:#dedcd3;stroke-width:1.2}
+.d-soft{fill:#f5f4ef;stroke:#dedcd3;stroke-width:1.2}
+.d-a{fill:#e6edfb;stroke:#2a5fd8;stroke-width:1.4}
+.d-w{fill:#fbeedd;stroke:#d9782a;stroke-width:1.4}
+.d-g{fill:#e3f4ec;stroke:#0f7a55;stroke-width:1.4}
+.d-r{fill:#fbe6e3;stroke:#b8322a;stroke-width:1.4}
+.d-t{fill:#13202f;font-size:13.5px;font-weight:600}
+.d-s{fill:#44505f;font-size:12px}
+.d-m{fill:#6b7480;font-size:11px;letter-spacing:.06em;font-family:Consolas, 'Courier New', monospace}
+.d-ln{stroke:#6b7480;stroke-width:1.5;fill:none}
+.d-ah{fill:#6b7480}
+.c-a{fill:#2a5fd8}.c-w{fill:#d9782a}.c-g{fill:#0f7a55}.c-b{fill:#b8322a}.c-m{fill:#6b7480}.c-i{fill:#13202f}
+.c-ax{stroke:#e7e5dd;stroke-width:1}
+.c-tg{stroke:#b8322a;stroke-width:2;stroke-dasharray:5 4}
+.c-tgt{fill:#b8322a;font-size:12px}
+.c-t{fill:#44505f;font-size:12px}
+.c-v{fill:#13202f;font-size:12px;font-weight:600;font-variant-numeric:tabular-nums}
+.c-la{stroke:#2a5fd8;stroke-width:2.5;fill:none}
+.c-lw{stroke:#d9782a;stroke-width:2.5;fill:none;stroke-dasharray:6 4}
+.c-ring{stroke:#2a5fd8;stroke-width:2;fill:none}
+</style><defs><marker id="ah-business-naive-vs-precision" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" class="d-ah"/></marker></defs><rect width="940" height="284" class="d-bg"/><text x="20.0" y="26.0" text-anchor="start" class="d-m" >NAIVE RAG (PHASE 1)</text><rect x="20" y="40" width="150" height="58" rx="10" class="d-box"/><text x="95.0" y="72.5" text-anchor="middle" class="d-t" >Question</text><rect x="205" y="40" width="190" height="58" rx="10" class="d-box"/><text x="300.0" y="65.0" text-anchor="middle" class="d-t" >Dense top-5</text><text x="300.0" y="82.0" text-anchor="middle" class="d-s" >closest meaning only</text><rect x="430" y="40" width="170" height="58" rx="10" class="d-box"/><text x="515.0" y="72.5" text-anchor="middle" class="d-t" >LLM answer</text><rect x="635" y="40" width="285" height="58" rx="10" class="d-r"/><text x="777.5" y="65.0" text-anchor="middle" class="d-t" >Risk: look-alike passage first</text><text x="777.5" y="82.0" text-anchor="middle" class="d-s" >or an outdated policy version</text><path d="M170,69 L203,69" class="d-ln" marker-end="url(#ah-business-naive-vs-precision)"/><path d="M395,69 L428,69" class="d-ln" marker-end="url(#ah-business-naive-vs-precision)"/><path d="M600,69 L633,69" class="d-ln" marker-end="url(#ah-business-naive-vs-precision)"/><text x="20.0" y="146.0" text-anchor="start" class="d-m" >PRECISIONRAG (PHASE 2)</text><rect x="20" y="160" width="150" height="70" rx="10" class="d-a"/><text x="95.0" y="191.0" text-anchor="middle" class="d-t" >Question</text><text x="95.0" y="208.0" text-anchor="middle" class="d-s" >+ scope filter</text><rect x="205" y="160" width="190" height="70" rx="10" class="d-a"/><text x="300.0" y="191.0" text-anchor="middle" class="d-t" >Dense ∪ BM25</text><text x="300.0" y="208.0" text-anchor="middle" class="d-s" >one Qdrant call, filtered</text><rect x="430" y="160" width="170" height="70" rx="10" class="d-a"/><text x="515.0" y="191.0" text-anchor="middle" class="d-t" >Cross-encoder</text><text x="515.0" y="208.0" text-anchor="middle" class="d-s" >picks the best 5</text><rect x="635" y="160" width="285" height="70" rx="10" class="d-g"/><text x="777.5" y="191.0" text-anchor="middle" class="d-t" >Right passage first</text><text x="777.5" y="208.0" text-anchor="middle" class="d-s" >only the current version exists</text><path d="M170,195 L203,195" class="d-ln" marker-end="url(#ah-business-naive-vs-precision)"/><path d="M395,195 L428,195" class="d-ln" marker-end="url(#ah-business-naive-vs-precision)"/><path d="M600,195 L633,195" class="d-ln" marker-end="url(#ah-business-naive-vs-precision)"/><text x="20.0" y="268.0" text-anchor="start" class="d-s" >Measured: MRR@10 +0.062 at 500k (GPU) and +0.048 at 100k (CPU) over dense · correct scope filter +0.074 · old versions never returned</text></svg>

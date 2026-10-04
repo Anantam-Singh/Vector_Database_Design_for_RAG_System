@@ -1,0 +1,40 @@
+{
+  "meta": {
+    "timestamp": "2026-10-03T21:22:18+00:00",
+    "git_commit": "uncommitted",
+    "config_fingerprint": "56c12b01ad",
+    "profile": "gpu",
+    "device": "cuda",
+    "hardware": {
+      "platform": "Windows-10-10.0.26300-SP0",
+      "python": "3.11.16",
+      "cpu_threads": 20,
+      "ram_gb": 15.7,
+      "torch_threads": 14,
+      "gpu": "NVIDIA GeForce RTX 3050 6GB Laptop GPU"
+    },
+    "collection": "msmarco_500k"
+  },
+  "data": {
+    "passages_indexed": 500000,
+    "validation_passages": 80797,
+    "labelled_validation_queries": 9706,
+    "resumed_from": 0,
+    "seconds": {
+      "corpus_build": 29.5,
+      "dense_embed": 525.5,
+      "bm25_embed": 120.3,
+      "upload": 283.5,
+      "hnsw_finish": 12.1,
+      "total": 1007.5
+    },
+    "total_minutes": 16.79,
+    "limit_minutes": 120,
+    "pass": true,
+    "ram_after": {
+      "qdrant_mb": 2149,
+      "python_mb": 2012,
+      "system_free_gb": 2.1
+    }
+  }
+}
