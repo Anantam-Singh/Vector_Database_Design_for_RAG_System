@@ -17,6 +17,9 @@ data/
 *.parquet
 results/checkpoints/
 
+# generated reports and working notes (kept locally, not published)
+docs/
+
 # editor / OS
 .vscode/
 .idea/

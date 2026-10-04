@@ -7,8 +7,8 @@ A retrieval system over **MS MARCO** passages in **Qdrant**: a dense-vector base
 dense + BM25 search with a documented, configurable fusion and a cross-encoder reranker (Phase 2), pre-retrieval
 metadata filters, live upsert/delete, a query UI, RAGAS evaluation and a 100-query latency benchmark.
 
-> **Our rule: we didn't assume a component helps — we measured it.** Every number in
-> [`docs/BENCHMARK_REPORT.md`](docs/BENCHMARK_REPORT.md) is generated from files in `results/`.
+> **Our rule: we didn't assume a component helps — we measured it.** Every number below comes from a file in
+> `results/`; `python -m scripts.make_report` turns them into a full benchmark report.
 
 ## Results
 
@@ -116,7 +116,7 @@ Linux / macOS: same steps with `.venv/bin/python` and `docker compose up -d` for
 | Topic routing effect | `python -m scripts.eval_topics --split dev_large --modes hybrid_rerank --configs none auto1 auto2 oracle` | `results/tags/topic_filter_*` |
 | 500k index + RAGAS at 500k | `python -m scripts.build_index --size 500000 --collection msmarco_500k`, then `QDRANT_COLLECTION=msmarco_500k python -m scripts.eval_ragas --modes dense hybrid_rerank --tag 500k` | `results/ragas/*_500k.csv` |
 | CPU deployment (100k) | `DEVICE=cpu python -m scripts.eval_ir --split test --tag cpu`, `DEVICE=cpu python -m scripts.eval_ragas --modes hybrid_rerank --tag cpu`, `python -m scripts.check_cpu_contexts` | `results/ir/*_cpu*`, `results/ragas/*_cpu*` |
-| Reports | `python -m scripts.make_report` · `python -m scripts.make_report_book` | `docs/BENCHMARK_REPORT.md` · `docs/ppt_report.html` + `docs/diagrams/` |
+| Reports (generated locally) | `python -m scripts.make_report` · `python -m scripts.make_report_book` | benchmark report (Markdown) · report book (HTML) with SVG diagrams |
 | Unit tests | `python -m pytest -q` | — |
 
 Every result file stores a stamp: time, git commit, config fingerprint, profile and hardware.
@@ -141,15 +141,7 @@ scripts/        build_index · make_eval_sets · eval_ir · eval_ragas · bench_
 tests/          48 offline unit tests (API, updates, tags, fusion, metrics, key switching)
 eval/           frozen question sets (dev, dev_large, test, ragas, latency)
 results/        every measurement (CSV / JSON, stamped)
-docs/           BENCHMARK_REPORT.md · ppt_report.html · diagrams/ · JUDGE_QA.md · GLOSSARY.md
 ```
-
-## Documentation
-- [`docs/BENCHMARK_REPORT.md`](docs/BENCHMARK_REPORT.md): every measured number with its source file, generated from `results/`.
-- [`docs/ppt_report.html`](docs/ppt_report.html): the full report book (business value, scalability, architecture,
-  evaluation, bonus features), with every diagram also saved as an SVG in [`docs/diagrams/`](docs/diagrams/).
-- [`docs/JUDGE_QA.md`](docs/JUDGE_QA.md): the 30 hardest questions about the design, with answers and sources.
-- [`docs/GLOSSARY.md`](docs/GLOSSARY.md): the terms used (MRR, RRF, HNSW, cross-encoder, RAGAS …) in plain words.
 
 ## Tech stack (all free and open-source)
 Python 3.11 · MS MARCO v1.1 (HuggingFace `datasets`) · Qdrant 1.19 · `BAAI/bge-small-en-v1.5` (sentence-transformers)
