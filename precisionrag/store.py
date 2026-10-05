@@ -34,7 +34,7 @@ def make_filter(category=None, source=None, topic=None, source_type=None, corpus
     must = []
     for key, v in (("category", category), ("source", source), ("topic", topic), ("source_type", source_type),
                    ("corpus", corpus)):
-        if not v:
+        if v is None:
             continue
         match = models.MatchAny(any=list(v)) if isinstance(v, (list, tuple)) else models.MatchValue(value=v)
         must.append(models.FieldCondition(key=key, match=match))
